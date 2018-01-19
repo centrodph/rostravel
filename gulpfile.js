@@ -2,10 +2,11 @@ var gulp = require("gulp");
 var less = require("gulp-less");
 var autoprefixer = require("gulp-autoprefixer");
 var plumber = require("gulp-plumber");
-var browserSync = require("browser-sync").create();
+var browserSync = require("browser-sync");
 var $ = require("gulp-load-plugins")({
   lazy: true
 });
+var reload = browserSync.reload;
 
 const config = {
   less: "./less/*",
@@ -23,7 +24,7 @@ gulp.task("styles", function() {
       })
     )
     .pipe(gulp.dest(config.css))
-    .pipe(browserSync.stream());
+    .pipe(browserSync.stream({ reload: true }));
 });
 
 gulp.task("less-watcher", function() {
@@ -37,7 +38,8 @@ gulp.task("serveFast", ["styles"], function() {
   browserSync.init({
     server: {
       baseDir: "./"
-    }
+    },
+    injectChanges: true
   });
   gulp.watch(config.less, ["styles"]);
   gulp.watch("./*.html").on("change", browserSync.reload);
