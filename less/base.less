@@ -1,9 +1,31 @@
 @azul: #006999;
 
+// Header
 .header {
-  padding: 20px 0;
   background: @azul;
   .navbar {
     background: none;
+  }
+  a {
+    color: #fff;
+    &.is-active {
+      border-bottom: solid 6px #fff;
+    }
+  }
+}
+
+// Home slider
+.slider-item {
+  position: relative;
+  .overlay {
+    display: flex;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    //background: rgba(0, 0, 255, 0.5);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }

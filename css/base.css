@@ -1,7 +1,31 @@
 .header {
-  padding: 20px 0;
   background: #006999;
 }
 .header .navbar {
   background: none;
+}
+.header a {
+  color: #fff;
+}
+.header a.is-active {
+  border-bottom: solid 6px #fff;
+}
+.slider-item {
+  position: relative;
+}
+.slider-item .overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
