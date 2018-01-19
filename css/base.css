@@ -28,4 +28,59 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  color: #fff;
+}
+.slider-text {
+  font-size: 25px;
+}
+.slider-title {
+  font-size: 40px;
+  text-shadow: 1px 1px 10px #000000;
+  font-weight: bold;
+}
+.slider-button a {
+  border: solid 2px #fff;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+}
+.home-donde-viajar {
+  position: relative;
+  z-index: 9;
+  top: -40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.donde-viajar {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-height: 300px;
+  max-width: 970px;
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  -webkit-box-shadow: 0px 20px 100px 0px rgba(0, 0, 0, 0.37);
+  box-shadow: 0px 20px 100px 0px rgba(0, 0, 0, 0.37);
+}
+.donde-viajar .donde-viajar-title {
+  color: #6e6e6e;
+  font-size: 30px;
+}
+.home-destacados-boxes {
+  padding: 40px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.destacados-boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.destacados-boxes .destacados-boxes-big {
+  padding-right: 5px;
 }
