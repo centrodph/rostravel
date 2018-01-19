@@ -20,3 +20,12 @@ $(".owl-carousel-box-slider").owlCarousel({
     '<i class="fas fa-angle-right"></i>'
   ]
 });
+$(".owl-carousel-viajes-unicos").owlCarousel({
+  stagePadding: 150,
+  loop: true,
+  items: 2,
+  dots: false,
+  nav: false,
+  margin: 10,
+  responsiveClass: true
+});
