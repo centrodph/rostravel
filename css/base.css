@@ -13,23 +13,65 @@
   font-style: normal;
   font-weight: 700;
 }
+.mon {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+}
+.manustrial {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+}
 button {
   cursor: pointer;
 }
 .header {
   background: #006999;
 }
+.header .logo {
+  padding: 10px 0 0 0;
+}
 .header .navbar {
   background: none;
 }
-.header a {
+.header a.navbar-item {
   color: #fff;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 40px;
 }
-.header a.is-active {
-  border-bottom: solid 6px #fff;
+.header a.navbar-item:hover {
+  background: none;
+}
+.header a.navbar-item:hover:after {
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  display: block;
+  position: absolute;
+  content: "";
+  height: 6px;
+  background: #FFF;
+}
+.header a.navbar-item.is-active {
+  color: #b4b4b4;
+}
+.clearfix {
+  clear: both;
+  height: 1px;
+  width: 100%;
+}
+.home-banner .slider-item {
+  height: 400px;
 }
 .slider-item {
   position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .slider-item .overlay {
   display: -webkit-box;
@@ -49,12 +91,19 @@ button {
   color: #fff;
 }
 .slider-text {
-  font-size: 25px;
+  font-size: 30px;
+  font-family: 'Asap Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-style: italic;
 }
 .slider-title {
-  font-size: 40px;
+  font-size: 60px;
   text-shadow: 1px 1px 10px #000000;
-  font-weight: bold;
+  font-family: 'Asap Condensed';
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 .slider-button a {
   border: solid 2px #fff;
@@ -91,8 +140,6 @@ button {
 }
 .home-destacados-boxes {
   padding: 40px 0;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 .owl-carousel-box-slider .owl-nav {
   position: absolute;
@@ -100,6 +147,15 @@ button {
   left: 0;
   width: 100%;
   z-index: 5;
+}
+.owl-carousel-box-slider .owl-nav .owl-prev,
+.owl-carousel-box-slider .owl-nav .owl-next {
+  background: none;
+  font-size: 40px;
+}
+.owl-carousel-box-slider .owl-nav .owl-prev:hover,
+.owl-carousel-box-slider .owl-nav .owl-next:hover {
+  background: none;
 }
 .owl-carousel-box-slider .owl-nav .owl-prev {
   float: left;
@@ -113,17 +169,72 @@ button {
   bottom: 5px;
   width: 100%;
 }
+.owl-carousel-box-slider .owl-dots .owl-dot span {
+  border: solid 2px #fff;
+  opacity: 1;
+  background: #fff;
+}
+.owl-carousel-box-slider .owl-dots .owl-dot.active span,
+.owl-carousel-box-slider .owl-dots .owl-dot:hover span {
+  background: none;
+}
 .destacados-boxes {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+.destacados-boxes .destacado-box-image {
+  margin-right: 5px;
+}
+.destacados-boxes .destacados-boxes-big {
+  width: 65%;
+  float: left;
+}
+.destacados-boxes .destacados-boxes-small {
+  width: 35%;
+  float: left;
+}
+.destacados-boxes .destacados-boxes-small .destacado-box-image {
+  position: relative;
+}
+.destacados-boxes .destacados-boxes-small .destacado-box-image .overlay {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFF;
 }
-.destacados-boxes .destacados-boxes-big {
-  padding-right: 5px;
-  max-width: 900px;
+.destacados-boxes .destacados-boxes-small .destacado-box-image .overlay .ov-title {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 100%;
+}
+.destacados-boxes .destacados-boxes-small .destacado-box-image .overlay .ov-subtitle {
+  font-family: 'Asap Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
 }
 .box-slide-big-item {
   position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .box-slide-big-item .overlay {
   display: -webkit-box;
@@ -141,6 +252,29 @@ button {
           align-items: center;
   text-align: center;
   color: #fff;
+}
+.box-slide-big-item .overlay {
+  background: url('../images/home-box-slide-overlay.png') no-repeat;
+  background-size: cover;
+}
+.box-slide-big-item .overlay .top-left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-width: 20%;
+}
+.box-slide-big-item .slider-text {
+  color: #c6c6c6;
+  font-size: 37px;
+  line-height: 40x;
+}
+.box-slide-big-item .slider-title {
+  font-size: 37px;
+  line-height: 40x;
+}
+.box-slide-big-item .slider-button a {
+  padding-top: 1px;
+  padding-bottom: 1px;
 }
 .home-viajes-unicos {
   padding: 30px 0;
@@ -189,6 +323,101 @@ button {
   padding: 10px 20px;
   color: #455a64;
 }
+.viajes-unicos-slide-item {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.viajes-unicos-slide-item .overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #fff;
+}
+.viajes-unicos-slide-item .overlay {
+  background: url('../images/home-box-slide-overlay.png') no-repeat;
+  background-size: cover;
+}
+.viajes-unicos-slide-item .overlay .top-left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-width: 20%;
+}
+.viajes-unicos-slide-item .slider-text {
+  color: #c6c6c6;
+  font-size: 37px;
+  line-height: 40x;
+}
+.viajes-unicos-slide-item .slider-title {
+  font-size: 37px;
+  line-height: 40x;
+}
+.viajes-unicos-slide-item .slider-button a {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+.viajes-unicos-slide-item .overlay {
+  padding: 30px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.viajes-unicos-slide-item .overlay-content {
+  text-align: left;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+.viajes-unicos-slide-item .slider-text {
+  display: inline-block;
+  background: #c01e1a;
+  padding: 5px 15px;
+  font-family: 'Asap Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 100%;
+}
+.viajes-unicos-slide-item .slider-title {
+  padding: 10px 0;
+  font-family: 'Asap Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  letter-spacing: 4px;
+}
+.viajes-unicos-slide-item .slider-description {
+  font-family: 'Asap Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  opacity: 0.5;
+}
+.viajes-unicos-slide-item a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 .footer-banner {
   background: url('../images/footer-banner-bg.jpg') no-repeat;
   background-size: cover;
@@ -204,6 +433,9 @@ button {
   font-weight: 400;
   font-size: 24px;
   padding: 25px 0;
+}
+.footer-banner-suscription .suscription-title {
+  padding-bottom: 25px;
 }
 .suscription-form {
   max-width: 920px;
