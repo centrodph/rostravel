@@ -59,6 +59,9 @@ button {
 .header a.navbar-item.is-active {
   color: #b4b4b4;
 }
+body {
+  background: #eceff1;
+}
 .clearfix {
   clear: both;
   height: 1px;
@@ -419,7 +422,7 @@ button {
   height: 100%;
 }
 .footer-banner {
-  background: url('../images/footer-banner-bg.jpg') no-repeat;
+  background: url('../images/footer-banner-bg2.jpg') no-repeat;
   background-size: cover;
   text-align: center;
 }
@@ -534,4 +537,66 @@ button {
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
+}
+.promos-top {
+  background: url(../images/promos-bg-top.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-top: 75px;
+}
+.promos-bg-viajes-unicos {
+  background: url('../images/home-header-promociones.png') no-repeat;
+  background-position: center center;
+  text-transform: uppercase;
+  text-align: center;
+  min-height: 196px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 120px;
+}
+.promos-bg-viajes-unicos .title {
+  font-size: 32px;
+  color: #455a64;
+  font-family: 'Asap Condensed';
+  font-style: normal;
+  font-weight: 500;
+}
+.promos-bg-viajes-unicos .promo {
+  font-size: 43px;
+  color: #455a64;
+  font-family: 'Asap Condensed';
+  font-style: normal;
+  font-weight: 700;
+}
+.promos-bg-viajes-unicos .promos-top-title {
+  font-family: 'Asap Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 43px;
+  color: #455a64;
+}
+.promos-bg-viajes-unicos .promos-top-nav {
+  font-family: 'Asap Condensed';
+  font-style: normal;
+  font-weight: 400;
+  color: #455a64;
+  font-size: 24px;
+}
+.promos-bg-viajes-unicos .promos-top-nav a {
+  margin: 0 10px;
+  color: #455a64;
+}
+.promos-bg-viajes-unicos .promos-top-nav a:hover,
+.promos-bg-viajes-unicos .promos-top-nav a.active {
+  font-family: 'Asap Condensed';
+  font-style: normal;
+  font-weight: 700;
 }
