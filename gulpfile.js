@@ -2,6 +2,7 @@ var gulp = require("gulp");
 var less = require("gulp-less");
 var autoprefixer = require("gulp-autoprefixer");
 var plumber = require("gulp-plumber");
+var rename = require("gulp-rename");
 var browserSync = require("browser-sync");
 var fileinclude = require('gulp-file-include');
 var $ = require("gulp-load-plugins")({
@@ -35,12 +36,16 @@ gulp.task("less-watcher", function() {
 
 
 gulp.task('fileinclude', function() {
-  gulp.src(['*.html'])
+  gulp.src(['_*.html'])
     .pipe(fileinclude({
       prefix: '@@',
       basepath: '@file'
     }))
-    .pipe(gulp.dest('./'));
+    .pipe(rename(function (path) {      
+      path.basename =path.basename.replace("_","");
+    }))
+    .pipe(gulp.dest('./'))
+    .pipe(browserSync.stream({ reload: true }));
 });
 
 /**
@@ -54,5 +59,6 @@ gulp.task("serveFast", ["styles"], function() {
     injectChanges: true
   });
   gulp.watch(config.less, ["styles"]);
+  gulp.watch("./*.html",["fileinclude"])
   gulp.watch("./*.html").on("change", browserSync.reload);
 });
