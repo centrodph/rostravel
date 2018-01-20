@@ -1,5 +1,5 @@
-@azul: #006999;
-@gris: #6e6e6e;
+@import 'btn.less';
+@import 'font.less';
 
 // Header
 .header {
@@ -40,10 +40,7 @@
   font-weight: bold;
 }
 .slider-button a {
-  border: solid 2px #fff;
-  display: inline-block;
-  padding: 10px 20px;
-  color: #fff;
+  .btn-border-maker(#fff);  
 }
 
 //DONDE viajar
@@ -109,3 +106,43 @@
 .box-slide-big-item {
   .slider-item;
 }
+
+//VIAJES UNICOS
+.home-viajes-unicos{
+  padding: 30px 0;
+}
+.home-viajes-unicos-header{
+  background: url('../images/home-header-promociones.png') no-repeat;
+  background-position: center center; 
+  text-transform: uppercase;
+  text-align: center;
+  min-height: 196px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  .title{
+    font-size: 32px;
+    color: @verdeazul;    
+    .asap-med;
+  }
+  .promo{
+    font-size: 43px;
+    color: @verdeazul;
+    .asap-bold;
+  }
+
+}
+.home-viajes-unicos-boxes{
+  padding: 20px 0;
+}
+.home-viajes-unicos-action{
+  text-align: center;
+  padding: 20px 0;
+  a{
+    .btn-border-maker(@verdeazul);
+  }
+}
+
+@import 'footer-banner.less';
+@import 'footer-contacto.less';
+@import 'footer-bottom.less';

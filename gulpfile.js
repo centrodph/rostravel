@@ -9,13 +9,14 @@ var $ = require("gulp-load-plugins")({
 var reload = browserSync.reload;
 
 const config = {
+  lessbase: "./less/base.less",
   less: "./less/*",
   css: "./css/"
 };
 
 gulp.task("styles", function() {
   return gulp
-    .src(config.less)
+    .src(config.lessbase)
     .pipe(plumber())
     .pipe(less())
     .pipe(

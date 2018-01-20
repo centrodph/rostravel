@@ -1,3 +1,21 @@
+.asap {
+  font-family: 'Asap Condensed';
+  font-style: normal;
+  font-weight: 400;
+}
+.asap-med {
+  font-family: 'Asap Condensed';
+  font-style: normal;
+  font-weight: 500;
+}
+.asap-bold {
+  font-family: 'Asap Condensed';
+  font-style: normal;
+  font-weight: 700;
+}
+button {
+  cursor: pointer;
+}
 .header {
   background: #006999;
 }
@@ -123,4 +141,165 @@
           align-items: center;
   text-align: center;
   color: #fff;
+}
+.home-viajes-unicos {
+  padding: 30px 0;
+}
+.home-viajes-unicos-header {
+  background: url('../images/home-header-promociones.png') no-repeat;
+  background-position: center center;
+  text-transform: uppercase;
+  text-align: center;
+  min-height: 196px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.home-viajes-unicos-header .title {
+  font-size: 32px;
+  color: #455a64;
+  font-family: 'Asap Condensed';
+  font-style: normal;
+  font-weight: 500;
+}
+.home-viajes-unicos-header .promo {
+  font-size: 43px;
+  color: #455a64;
+  font-family: 'Asap Condensed';
+  font-style: normal;
+  font-weight: 700;
+}
+.home-viajes-unicos-boxes {
+  padding: 20px 0;
+}
+.home-viajes-unicos-action {
+  text-align: center;
+  padding: 20px 0;
+}
+.home-viajes-unicos-action a {
+  border: solid 2px #455a64;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #455a64;
+}
+.footer-banner {
+  background: url('../images/footer-banner-bg.jpg') no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.footer-banner-logo {
+  padding: 40px 0 70px;
+}
+.footer-banner-suscription {
+  color: #fff;
+  font-family: 'Asap Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  padding: 25px 0;
+}
+.suscription-form {
+  max-width: 920px;
+  margin: 0 auto;
+}
+.suscription-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.suscription-form input,
+.suscription-form button {
+  margin: 0;
+  border: none;
+  height: 53px;
+  font-size: 22px;
+  font-family: 'Asap Condensed';
+  font-style: normal;
+  font-weight: 400;
+}
+.suscription-form input {
+  -webkit-box-flex: 8;
+      -ms-flex: 8;
+          flex: 8;
+  padding: 0 10px;
+  font-style: initial;
+}
+.suscription-form button {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  background: #f68014;
+  color: #fff;
+  cursor: pointer;
+}
+.footer-banner-nav {
+  padding: 50px 0;
+}
+.footer-banner-nav a {
+  text-transform: uppercase;
+  color: #fff;
+  font-family: 'Asap Condensed';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 18px;
+}
+.footer-contacto {
+  background: #006999;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-family: 'Asap Condensed';
+  font-style: normal;
+  font-weight: 400;
+}
+.footer-bottom {
+  background: #13202d;
+  color: #fff;
+  padding: 30px 0;
+}
+.footer-bottom-content {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  max-width: 1200px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.footer-bottom-content .footer-bottom-text {
+  -webkit-box-flex: 9;
+      -ms-flex: 9;
+          flex: 9;
+  text-align: left;
+  font-size: 12px;
+}
+.footer-bottom-content .footer-bottom-afip {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.footer-bottom-content .footer-bottom-kodear {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
 }
