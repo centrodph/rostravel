@@ -3,6 +3,7 @@ var less = require("gulp-less");
 var autoprefixer = require("gulp-autoprefixer");
 var plumber = require("gulp-plumber");
 var browserSync = require("browser-sync");
+var fileinclude = require('gulp-file-include');
 var $ = require("gulp-load-plugins")({
   lazy: true
 });
@@ -30,6 +31,16 @@ gulp.task("styles", function() {
 
 gulp.task("less-watcher", function() {
   gulp.watch(config.less, ["styles"]);
+});
+
+
+gulp.task('fileinclude', function() {
+  gulp.src(['*.html'])
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: '@file'
+    }))
+    .pipe(gulp.dest('./'));
 });
 
 /**
