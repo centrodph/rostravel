@@ -17,6 +17,8 @@ https://centrodph.github.io/rostravel/promos.html
 
 https://centrodph.github.io/rostravel/promo-item.html
 
+https://centrodph.github.io/rostravel/contacto.html
+
 
 #Libs
 
