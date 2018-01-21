@@ -2,6 +2,7 @@
 $(".owl-carousel-home-banner").owlCarousel({
   loop: true,
   items: 1,
+  thumbs: false,
   dots: false,
   margin: 10,
   responsiveClass: true
@@ -11,6 +12,7 @@ $(".owl-carousel-home-banner").owlCarousel({
 $(".owl-carousel-box-slider").owlCarousel({
   loop: true,
   items: 1,
+  thumbs: false,
   dots: true,
   nav: true,
   margin: 10,
@@ -24,6 +26,7 @@ $(".owl-carousel-viajes-unicos").owlCarousel({
   stagePadding: 150,
   loop: true,
   items: 2,
+  thumbs: false,
   dots: false,
   nav: false,
   margin: 10,
@@ -44,7 +47,7 @@ $('.owl-carousel-gallery').owlCarousel({
 });
 
 $('.galery-close').click(()=>{
-  console.log("ds");
+
   $('.overlay-galery').hide();
 })
 $('.gp-item a').click(()=>{
