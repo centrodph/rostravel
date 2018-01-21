@@ -37,6 +37,12 @@
     font-weight: 400;
 }
 
+.opens{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+}
+
 
 button{
     cursor: pointer;
@@ -69,4 +75,13 @@ button{
     -webkit-transition: 0.4s ease-in-out;
     -moz-transition: 0.4s ease-in-out;
     -o-transition: 0.4s ease-in-out;   
+}
+
+
+.my-translation(@animation-width, @animation-height){
+    -webkit-transform: translate(@animation-width,@animation-height);
+    -moz-transform: translate(@animation-width,@animation-height);
+    -o-transform: translate(@animation-width,@animation-height);
+    -ms-transform: translate(@animation-width,@animation-height);
+    transform: translate(@animation-width,@animation-height); 
 }

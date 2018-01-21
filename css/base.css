@@ -23,6 +23,11 @@
   font-style: normal;
   font-weight: 400;
 }
+.opens {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+}
 button {
   cursor: pointer;
 }
@@ -775,8 +780,95 @@ body {
   padding: 10px 20px;
   color: #455a64;
 }
+.promo-item-top .promo-item-top-bg {
+  background-size: cover;
+  background-position: center center;
+}
+.promo-item-top .promo-item-top-bg .container {
+  height: 430px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 .promo-item-top .box-reservar {
   width: 30%;
+}
+.promo-item-center-bg {
+  background: url(../images/promos-bg-top.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-top: 75px;
+}
+.promo-item-center-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.promo-item-center-content .social-box,
+.promo-item-center-content .galery-photos,
+.promo-item-center-content .documentos-dowload {
+  padding-bottom: 30px;
+}
+.promo-item-center-content .promo-item-sidebar {
+  width: 30%;
+}
+.promo-item-center-content .promo-item-information {
+  width: 70%;
+  padding-right: 40px;
+}
+.btn-print {
+  float: right;
+  position: relative;
+  top: -32px;
+  display: inline-block;
+  padding: 4px  9px;
+  border: solid 1px #bdc2c5;
+  font-size: 15px;
+  color: #bdc2c5;
+}
+.btn-print i {
+  margin-right: 5px;
+}
+.header-promo-item {
+  padding: 15px 0;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  border-bottom: solid 1px #98999a;
+  position: relative;
+}
+.header-promo-item .head-promo-title {
+  font-family: 'Asap Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 47px;
+}
+.header-promo-item .head-promo-subtitle {
+  font-family: 'Asap Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  opacity: 0.5;
+}
+.article-promo-item {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  padding-bottom: 70px;
+}
+.article-promo-item p {
+  font-size: 16px;
+  line-height: 28px;
+  margin: 15px 0px;
 }
 .box-reservar {
   text-align: center;
@@ -839,4 +931,144 @@ body {
   padding: 15px 10px;
   color: #fff;
   font-size: 27px;
+}
+.sb-title {
+  font-family: 'Asap Condensed';
+  font-style: normal;
+  font-weight: 400;
+  padding: 10px 0;
+  font-size: 18px;
+  opacity: 0.6;
+  text-align: center;
+}
+.social-box {
+  text-align: center;
+}
+.social-box .sb-social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.social-box .sb-social-links a {
+  display: block;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 2px;
+  padding: 13px 0;
+  color: #fff;
+}
+.social-box .sb-social-links a i {
+  font-size: 35px;
+}
+.social-box .sb-social-links a.sb-face {
+  background: #3b5998;
+}
+.social-box .sb-social-links a.sb-twit {
+  background: #47b1f2;
+}
+.gp-title {
+  font-family: 'Asap Condensed';
+  font-style: normal;
+  font-weight: 400;
+  padding: 10px 0;
+  font-size: 18px;
+  opacity: 0.6;
+  text-align: center;
+}
+.gp-photos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.gp-photos .gp-item {
+  position: relative;
+  width: 33%;
+  padding: 0 1px;
+}
+.gp-photos .gp-item a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+  background: rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  -webkit-transition: 0.4s ease-in-out;
+  -moz-transition: 0.4s ease-in-out;
+  -o-transition: 0.4s ease-in-out;
+}
+.gp-photos .gp-item a img {
+  opacity: 0;
+  -webkit-transition: 0.8s ease-in-out;
+  -moz-transition: 0.8s ease-in-out;
+  -o-transition: 0.8s ease-in-out;
+  -webkit-transform: translate(0, -30px);
+  transform: translate(0, -30px);
+}
+.gp-photos .gp-item a:hover {
+  opacity: 1;
+}
+.gp-photos .gp-item a:hover img {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.dd-title {
+  font-family: 'Asap Condensed';
+  font-style: normal;
+  font-weight: 400;
+  padding: 10px 0;
+  font-size: 18px;
+  opacity: 0.6;
+  text-align: center;
+}
+.documentos-dowload {
+  color: #455a64;
+}
+.documentos-dowload .dd-list {
+  max-height: 260px;
+  overflow: scroll;
+}
+.documentos-dowload .dd-name {
+  font-size: 20px;
+  font-family: 'Asap Condensed';
+  font-style: normal;
+  font-weight: 700;
+}
+.documentos-dowload .dd-detail {
+  font-size: 16px;
+  font-family: 'Asap Condensed';
+  font-style: normal;
+  font-weight: 400;
+}
+.documentos-dowload .dd-list-item {
+  margin-right: 15px;
+  padding: 15px 0 15px 60px;
+  border-bottom: solid 1px #919ba0;
+  position: relative;
+  background: url(../images/icon-descarga.png) no-repeat;
+  background-position: 8px center;
 }

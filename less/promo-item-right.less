@@ -1,3 +1,4 @@
+//RESERVAR
 .box-reservar{
     text-align: center;
 }
@@ -43,4 +44,119 @@
         color: #fff;
         font-size: 27px;
     }
+}
+
+
+
+
+//SOCIAL
+.sb-title{
+    .asap;
+    padding: 10px 0;
+    font-size: 18px;
+    opacity: 0.6;
+    text-align: center;
+}
+.social-box{
+    text-align: center;
+    .social-box-content{}
+
+    .sb-social-links{
+        display: flex;
+        flex-direction: row;
+        
+        a{
+            display: block;
+            flex: 1;
+            margin: 2px;
+            padding: 13px 0;
+            color: #fff;
+            i{
+                font-size: 35px;
+            }
+        }
+
+        a.sb-face{
+            background: #3b5998;
+        }
+        a.sb-twit{
+            background: #47b1f2;
+        }
+    }
+}
+
+
+
+//GALERY
+.gp-title{
+    .sb-title
+}
+
+.gp-photos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    .gp-item{        
+        position: relative;    
+        width: 33%;
+        padding:0 1px;
+        a{
+            position: absolute;
+            top:0;
+            left: 0;
+            right: 0;
+            bottom: 5px;
+            background:rgba(0, 0, 0, 0.3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            .animate-basic;
+            img{
+                opacity: 0;
+                -webkit-transition: .8s ease-in-out;
+                -moz-transition: 0.8s ease-in-out;
+                -o-transition: 0.8s ease-in-out;  
+                .my-translation(0, -30px);                
+            }
+            &:hover{
+                opacity: 1;
+                img{
+                    opacity:1;
+                    .my-translation(0, 0);
+                } 
+            }
+        }
+    }
+}
+
+
+.dd-title{
+    .sb-title;
+}
+.documentos-dowload{
+    .dd-list{
+        max-height: 260px;
+        overflow: scroll;
+    }
+    color: @verdeazul;
+    .dd-name{
+        font-size: 20px;
+        .asap-bold;
+    }   
+    .dd-detail{
+        font-size: 16px;
+        .asap;
+    } 
+    .dd-list-item{
+        margin-right: 15px;
+        padding: 15px 0 15px 60px;
+        border-bottom: solid 1px #919ba0;
+        position: relative;
+        background: url(../images/icon-descarga.png) no-repeat;
+        background-position: 8px center;
+    }
+
 }

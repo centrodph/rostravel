@@ -30,3 +30,5 @@ https://fontawesome.com/icons
 https://dummyimage.com/
 
 https://owlcarousel2.github.io/OwlCarousel2/docs/started-welcome.html
+
+https://github.com/gijsroge/OwlCarousel2-Thumbs
