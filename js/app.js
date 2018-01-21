@@ -29,3 +29,24 @@ $(".owl-carousel-viajes-unicos").owlCarousel({
   margin: 10,
   responsiveClass: true
 });
+
+
+
+
+$('.owl-carousel-gallery').owlCarousel({
+                loop: true,
+                items: 1,
+                dots: false,
+                thumbs: true,
+                thumbImage: true,
+                thumbContainerClass: 'owl-thumbs',
+                thumbItemClass: 'owl-thumb-item'
+});
+
+$('.galery-close').click(()=>{
+  console.log("ds");
+  $('.overlay-galery').hide();
+})
+$('.gp-item a').click(()=>{
+  $('.overlay-galery').show();
+})

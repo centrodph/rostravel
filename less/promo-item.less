@@ -84,3 +84,59 @@
     }
 
 }
+
+
+
+
+
+.overlay-galery{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+
+
+
+    .overlay-content{
+        padding: 40px;
+        max-width: 900px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .close{
+        text-align: right;
+        a{
+            position: relative;
+            right: -5px;
+            color: #FFF;
+        }
+    }
+    .owl-thumb-item img {
+        width: 150px;
+        height: auto;
+    }
+    .owl-thumbs{
+        display: flex;
+        justify-content: center;
+        padding: 10px 50px;
+        .owl-thumb-item{
+            margin: 0;
+            padding: 0;
+            background: none;
+            border:none;
+            height: 115px;
+            width: 115px;
+            img{
+                height: 100%;
+                width: auto;
+
+            }
+        }
+    }
+
+}
