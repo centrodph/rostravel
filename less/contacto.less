@@ -1,7 +1,144 @@
 .contacto-top{
     .contacto-top-bg{
-        background-size: cover;
+        background-size: auto 100%;
         background-position: center center;
         height: 430px;
     }
+}
+
+
+.contacto-info-bg{
+    position: relative;
+    top:-40px;
+    background: #FFF;
+    padding: 20px 0;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    .contacto-info-sep{
+        height: 132px;
+        width: 1px;
+        background: #e7e8ea;
+    }
+
+    .ci-icon{
+        font-size: 44px;
+        color: @naranja;
+    }
+    .ci-desc{
+        .asap;
+        font-size: 19px;
+        min-height: 50px;
+    }
+
+    .contacto-info-box{
+        position: relative;
+        width: 33%;
+        &.border{
+            &:after{
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: 100%;
+                width: 1px;
+                background: #e7e8ea;
+            }
+        }
+    }
+
+}
+
+.contacto-center-bg{
+    background: url(../images/promos-bg-top.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding-top: 0;
+}
+.tus-proximos-viajes{
+    background: url('../images/tu-proximo-viaje-bg.png') no-repeat;
+    background-position: top center; 
+    text-transform: uppercase;
+    text-align: center;
+    min-height: 196px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 80px 30px 0px 30px;
+
+    .title,.desc{
+        max-width: 630px;
+        margin: 0 auto;
+    }
+
+    .title{
+      font-size: 43px;
+      color: @verdeazul;    
+      .asap-med;
+    }
+    .desc{
+      font-size: 14px;
+      color: @verdeazul;
+      .opens;
+      opacity: 0.6;
+    }
+  
+  }
+
+
+
+
+
+
+.contacto-form{
+    padding-top: 40px;
+    padding-bottom: 60px;
+ max-width: 680px;
+ margin: 0 auto;
+}
+
+.contacto-form-content{
+
+    form{
+    }
+
+    .cf-input{
+        width: 50%;
+        float: left;
+        padding: 10px;
+        &.full{
+            width: 100%;
+        }
+        .select,select{
+            width: 100%;
+        }
+
+        input, select, textarea{
+            .input-shadow
+        }
+
+
+        
+
+    }
+
+    .cf-action{
+        padding: 20px 0;
+        text-align: center;
+        button{
+            .opens;
+            font-size: 17px;
+            padding: 0 33px;
+            background: @verdeazul;
+            color: #FFF;
+            height: 32px;
+            line-height: 32px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;            
+        }
+    }
+
+
 }
