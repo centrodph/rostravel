@@ -1,32 +1,31 @@
 .header {
-    background: @azul;
-    .logo{
-        padding: 10px 0 0 0;
-    }
-    .navbar {
-      background: none;
-    }
-    a.navbar-item  {
-      color: #fff;
-      .mon;
-      font-size: 15px;
-      line-height: 40px;
-      &:hover{
-        background: none;
-        &:after{
-            width: 100%;
-            left: 0;
-            bottom: 0;
-            display: block;
-            position: absolute;
-            content: "";
-            height: 6px;
-            background: #FFF;
-        }
-      }
-      &.is-active {        
-        color: @nav-hover;
-      }
-    }
-  }
-  
+	background: @azul;
+	.logo {
+		padding: 10px 0 0 0;
+	}
+	.navbar {
+		background: none;
+	}
+	a.navbar-item {
+		color: #fff;
+		.mon;
+		font-size: 15px;
+		line-height: 40px;
+		&:hover {
+			background: none;
+			&:after {
+				width: 100%;
+				left: 0;
+				bottom: 0;
+				display: block;
+				position: absolute;
+				content: '';
+				height: 6px;
+				background: #fff;
+			}
+		}
+		&.is-active {
+			color: @nav-hover;
+		}
+	}
+}

@@ -83,9 +83,9 @@ button {
   bottom: 0;
   display: block;
   position: absolute;
-  content: "";
+  content: '';
   height: 6px;
-  background: #FFF;
+  background: #fff;
 }
 .header a.navbar-item.is-active {
   color: #b4b4b4;
@@ -249,7 +249,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #FFF;
+  color: #fff;
 }
 .destacados-boxes .destacados-boxes-small .destacado-box-image .overlay .ov-title {
   font-family: 'Lobster';
@@ -1258,4 +1258,14 @@ body {
   height: 32px;
   line-height: 32px;
   border-radius: 4px;
+}
+.is-sticky {
+  z-index: 99;
+  position: relative;
+}
+.is-sticky .header {
+  z-index: 99;
+}
+.is-sticky .promos-search {
+  background: #f68014;
 }

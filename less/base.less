@@ -1,295 +1,291 @@
 @import 'btn.less';
 @import 'font.less';
 
-
 @import 'header.less';
 
-body{
-  background: #eceff1;
+body {
+	background: #eceff1;
 }
-.clearfix{
-  clear: both;
-  height: 1px;
-  width: 100%;
+.clearfix {
+	clear: both;
+	height: 1px;
+	width: 100%;
 }
 
 // Home slider
-.home-banner{
-  .slider-item{
-    height: 400px;
-  }
+.home-banner {
+	.slider-item {
+		height: 400px;
+	}
 }
-.slider-item{
-  position: relative;  
-  background-repeat: no-repeat;
-  background-position:center;
-  background-size: cover;
-  .overlay {
-    display: flex;
-    position: absolute;
-    top: 0;
-    height: 100%;
-    //background: rgba(0, 0, 255, 0.5);
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #fff;
-  }
+.slider-item {
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	.overlay {
+		display: flex;
+		position: absolute;
+		top: 0;
+		height: 100%;
+		//background: rgba(0, 0, 255, 0.5);
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		color: #fff;
+	}
 }
 .slider-text {
-  font-size: 30px;
-  .asap;
-  font-style: italic;
+	font-size: 30px;
+	.asap;
+	font-style: italic;
 }
 .slider-title {
-  font-size: 60px;
-  text-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
-  .asap-bold;
-  text-transform: uppercase;
+	font-size: 60px;
+	text-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
+	.asap-bold;
+	text-transform: uppercase;
 }
 .slider-button a {
-  .btn-border-maker(#fff);  
+	.btn-border-maker(#fff);
 }
 
 //DONDE viajar
 .home-donde-viajar {
-  position: relative;
-  z-index: 9;
-  top: -40px;
-  display: flex;
-  justify-content: center;
+	position: relative;
+	z-index: 9;
+	top: -40px;
+	display: flex;
+	justify-content: center;
 }
 .donde-viajar {
-  flex: 1;
-  min-height: 300px;
-  max-width: 970px;
-  background: #fff;
-  padding: 20px;
-  text-align: center;
-  .basic-shadow;
-  .donde-viajar-title {
-    color: @gris;
-    font-size: 30px;
-  }
+	flex: 1;
+	min-height: 300px;
+	max-width: 970px;
+	background: #fff;
+	padding: 20px;
+	text-align: center;
+	.basic-shadow;
+	.donde-viajar-title {
+		color: @gris;
+		font-size: 30px;
+	}
 }
 
 //boxes destacados
 .home-destacados-boxes {
-  padding: 40px 0;
+	padding: 40px 0;
 }
 .owl-carousel-box-slider {
-  .owl-nav {
-    position: absolute;
-    top: 42%;
-    left: 0;
-    width: 100%;
-    z-index: 5;
-    .owl-prev,.owl-next {
-      background: none;
-      font-size: 40px;
-      &:hover{
-        background: none;
-      }
-    }
-    .owl-prev {
-      float: left;      
-    }
-    .owl-next {
-      float: right;
-    }
-  }
-  .owl-dots {
-    position: absolute;
-    left: 0;
-    bottom: 5px;
-    width: 100%;
-    .owl-dot span{
-      border: solid 2px #fff;
-      opacity: 1;
-      background: #fff;
-    }
-    .owl-dot.active span,
-     .owl-dot:hover span{
-       background: none;
-     }
-  }
-
-
-
-
-
+	.owl-nav {
+		position: absolute;
+		top: 42%;
+		left: 0;
+		width: 100%;
+		z-index: 5;
+		.owl-prev,
+		.owl-next {
+			background: none;
+			font-size: 40px;
+			&:hover {
+				background: none;
+			}
+		}
+		.owl-prev {
+			float: left;
+		}
+		.owl-next {
+			float: right;
+		}
+	}
+	.owl-dots {
+		position: absolute;
+		left: 0;
+		bottom: 5px;
+		width: 100%;
+		.owl-dot span {
+			border: solid 2px #fff;
+			opacity: 1;
+			background: #fff;
+		}
+		.owl-dot.active span,
+		.owl-dot:hover span {
+			background: none;
+		}
+	}
 }
 .destacados-boxes {
-  max-width: 1120px;
-  margin: 0 auto;
-  .destacado-box-image{
-    margin-right: 5px;
-  }
-  .destacados-boxes-big {
-    width: 65%;
-    float: left;
-  }
+	max-width: 1120px;
+	margin: 0 auto;
+	.destacado-box-image {
+		margin-right: 5px;
+	}
+	.destacados-boxes-big {
+		width: 65%;
+		float: left;
+	}
 
-  .destacados-boxes-small{
-    width: 35%;
-    float: left;
-    .destacado-box-image{
-      position: relative;      
-      .overlay{
-        display: flex;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: #FFF;   
-        .ov-title{
-          .manustrial;
-          font-size: 38px;
-          line-height: 100%;
-        } 
-        .ov-subtitle{
-          .asap;
-          font-size: 19px;
-        }      
-      }
-    }
-  }  
-
+	.destacados-boxes-small {
+		width: 35%;
+		float: left;
+		.destacado-box-image {
+			position: relative;
+			.overlay {
+				display: flex;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				color: #fff;
+				.ov-title {
+					.manustrial;
+					font-size: 38px;
+					line-height: 100%;
+				}
+				.ov-subtitle {
+					.asap;
+					font-size: 19px;
+				}
+			}
+		}
+	}
 }
 .box-slide-big-item {
-  .slider-item;
-  .overlay{
-    background: url('../images/home-box-slide-overlay.png') no-repeat;
-    background-size: cover;
+	.slider-item;
+	.overlay {
+		background: url('../images/home-box-slide-overlay.png') no-repeat;
+		background-size: cover;
 
-    .top-left{
-      position: absolute;
-      left:0;
-      top: 0;
-      max-width: 20%;
-    }
-
-  }
-  .slider-text{
-    color: #c6c6c6;
-    font-size: 37px;
-    line-height: 40x;
-  }
-  .slider-title{
-    font-size: 37px;
-    line-height: 40x;
-  }  
-  .slider-button{
-    a{
-      padding-top: 1px;
-      padding-bottom: 1px;
-    }
-  }
-
-
+		.top-left {
+			position: absolute;
+			left: 0;
+			top: 0;
+			max-width: 20%;
+		}
+	}
+	.slider-text {
+		color: #c6c6c6;
+		font-size: 37px;
+		line-height: 40x;
+	}
+	.slider-title {
+		font-size: 37px;
+		line-height: 40x;
+	}
+	.slider-button {
+		a {
+			padding-top: 1px;
+			padding-bottom: 1px;
+		}
+	}
 }
 
 //VIAJES UNICOS
-.home-viajes-unicos{
-  padding: 30px 0;
+.home-viajes-unicos {
+	padding: 30px 0;
 }
-.home-viajes-unicos-header{
-  background: url('../images/home-header-promociones.png') no-repeat;
-  background-position: center center; 
-  text-transform: uppercase;
-  text-align: center;
-  min-height: 196px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  .title{
-    font-size: 32px;
-    color: @verdeazul;    
-    .asap-med;
-  }
-  .promo{
-    font-size: 43px;
-    color: @verdeazul;
-    .asap-bold;
-  }
-
+.home-viajes-unicos-header {
+	background: url('../images/home-header-promociones.png') no-repeat;
+	background-position: center center;
+	text-transform: uppercase;
+	text-align: center;
+	min-height: 196px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	.title {
+		font-size: 32px;
+		color: @verdeazul;
+		.asap-med;
+	}
+	.promo {
+		font-size: 43px;
+		color: @verdeazul;
+		.asap-bold;
+	}
 }
-.home-viajes-unicos-boxes{
-  padding: 20px 0;
+.home-viajes-unicos-boxes {
+	padding: 20px 0;
 }
-.home-viajes-unicos-action{
-  text-align: center;
-  padding: 20px 0;
-  a{
-    .btn-border-maker(@verdeazul);
-  }
-}
-
-.viajes-unicos-slide-item{
-  .box-slide-big-item;
-  .overlay{
-    padding: 30px 40px;
-    display: flex;    
-    justify-content: flex-start;
-    align-items: flex-end;
-  }
-  .overlay-content{
-    text-align: left;
-    align-self: flex-end;
-  }
-  .slider-text{
-    display: inline-block;
-    background: #c01e1a;
-    padding: 5px 15px;
-    .asap;
-    font-size: 25px;
-    line-height: 100%;
-  }
-  .slider-title{
-    padding: 10px 0;
-    .asap;
-    font-size: 40px;
-    letter-spacing: 4px;
-  }
-  .slider-description{
-    .asap;
-    font-size: 18px;
-    opacity: 0.5;
-  }
-  a{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-
+.home-viajes-unicos-action {
+	text-align: center;
+	padding: 20px 0;
+	a {
+		.btn-border-maker(@verdeazul);
+	}
 }
 
-
-
-
+.viajes-unicos-slide-item {
+	.box-slide-big-item;
+	.overlay {
+		padding: 30px 40px;
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-end;
+	}
+	.overlay-content {
+		text-align: left;
+		align-self: flex-end;
+	}
+	.slider-text {
+		display: inline-block;
+		background: #c01e1a;
+		padding: 5px 15px;
+		.asap;
+		font-size: 25px;
+		line-height: 100%;
+	}
+	.slider-title {
+		padding: 10px 0;
+		.asap;
+		font-size: 40px;
+		letter-spacing: 4px;
+	}
+	.slider-description {
+		.asap;
+		font-size: 18px;
+		opacity: 0.5;
+	}
+	a {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
 
 //FOOTER
 @import 'footer-banner.less';
 @import 'footer-contacto.less';
 @import 'footer-bottom.less';
 
-
 // PROMOS PAGE
 @import 'promos-top.less';
 @import 'promos-result.less';
-
 
 // PROMO ITEM RIGHT
 @import 'promo-item.less';
 @import 'promo-item-right.less';
 
-
 //CONTACTO PAGE
 @import 'contacto.less';
+
+//STICKY
+
+.is-sticky {
+	z-index: 99;
+	position: relative;
+	.header {
+		z-index: 99;
+	}
+
+	.promos-search {
+		background: @naranja;
+	}
+}
