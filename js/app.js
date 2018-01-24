@@ -47,25 +47,21 @@ $('.gp-item a').click(() => {
 	$('.overlay-galery').show();
 });
 
-$(document).ready(function() {
-	$('.header').sticky({ topSpacing: 0 });
+//Sticky elements
+const header = $('.header');
+const promosSearch = $('.promos-search');
+const sticked = false;
 
-	$('.promos-search')
-		.sticky({ topSpacing: '83px' })
-		.on('sticky-start', function() {
-			console.log('Started');
-		})
-		.on('sticky-end', function() {
-			console.log('Ended');
-		})
-		.on('sticky-update', function() {
-			console.log('Update');
-		})
-		.on('sticky-bottom-reached', function() {
-			console.log('Bottom reached');
-		})
-		.on('sticky-bottom-unreached', function() {
-			console.log('Bottom unreached');
-		})
-		.unstick();
+$(document).ready(function() {});
+
+$(window).scroll(function(event) {
+	var scroll = $(window).scrollTop();
+	if (scroll > 400 && !sticked) {
+		header.sticky({ topSpacing: 0 });
+		promosSearch.sticky({ topSpacing: header.height() });
+	}
+	if (scroll < 400 && sticked) {
+		header.unstick();
+		promosSearch.unstick();
+	}
 });
