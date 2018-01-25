@@ -50,6 +50,7 @@ $('.gp-item a').click(() => {
 //Sticky elements
 const header = $('.header');
 const promosSearch = $('.promos-search');
+const promoItem = $('.promo-item-top-sticky');
 const sticked = false;
 
 $(document).ready(function() {});
@@ -59,9 +60,14 @@ $(window).scroll(function(event) {
 	if (scroll > 400 && !sticked) {
 		header.sticky({ topSpacing: 0 });
 		promosSearch.sticky({ topSpacing: header.height() });
+		promoItem.sticky({ topSpacing: header.height() });
 	}
 	if (scroll < 400 && sticked) {
 		header.unstick();
 		promosSearch.unstick();
+		promosSearch.on('sticky-end', function() {
+			console.log('SSDDSDSSDSDSDDS');
+			console.log(promoItem.parent().height(0));
+		});
 	}
 });

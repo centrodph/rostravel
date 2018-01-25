@@ -312,9 +312,38 @@ body {
 	.promos-search {
 		background: @naranja;
 	}
+	.promos-search-form {
+		.promos-search-form-sticky;
+	}
 }
 
 .promos-search-form-sticky {
-}
-.promos-search-form {
+	input {
+		border-bottom: solid 1px #fff;
+		width: 100%;
+	}
+	input,
+	button {
+		background: none;
+		color: #fff;
+	}
+	button {
+		display: none;
+	}
+	input::-webkit-input-placeholder {
+		/* Chrome/Opera/Safari */
+		color: #fff;
+	}
+	input::-moz-placeholder {
+		/* Firefox 19+ */
+		color: #fff;
+	}
+	input:-ms-input-placeholder {
+		/* IE 10+ */
+		color: #fff;
+	}
+	input:-moz-placeholder {
+		/* Firefox 18- */
+		color: #fff;
+	}
 }

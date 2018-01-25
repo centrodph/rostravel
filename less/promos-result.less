@@ -1,102 +1,106 @@
-@animation-height:36px;
+@animation-height: 36px;
 
-.promos-result-list{
-    padding: 30px 0 40px 0;
-}
-
-
-.promos-result-content{
-    max-width: 1120px;
-    display: flex;    
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-    .promos-result-item{
-        align-self: flex-start;
-        max-width: 350px;
-        overflow: hidden;
-        .item-shadow;
-        margin-bottom: 30px;
-        position: relative;
-        .promos-result-item-more{            
-            .animate-basic;
-            -webkit-transform: translate(0,@animation-height);
-            -moz-transform: translate(0,@animation-height);
-            -o-transform: translate(0,@animation-height);
-            -ms-transform: translate(0,@animation-height);
-            transform: translate(0,@animation-height);            
-        }
-        &:hover, &.active{
-            .promos-result-item-more{
-            
-                -webkit-transform: translate(0,0);
-                -moz-transform: translate(0,0);
-                -o-transform: translate(0,0);
-                -ms-transform: translate(0,0);
-                transform: translate(0,0);                
-            }
-        }
-        &:hover, &.active{
-            .promos-result-item-description{
-                
-                -webkit-transform: translate(0,-@animation-height);
-                -moz-transform: translate(0,-@animation-height);
-                -o-transform: translate(0,-@animation-height);
-                -ms-transform: translate(0,-@animation-height);
-                transform: translate(0,-@animation-height);
-            }
-        }
-    }
-}
-.promos-result-item-description{
-    margin-top: -5px;
-    padding: 30px 25px;
-    position: relative;
-    background: #fff;
-    .animate-basic;
-}
-.pr-price{
-    margin-left: 25px;
-    display: inline-block;
-    background: #c01e1a;
-    padding: 5px 15px;
-    .asap;
-    font-size: 25px;
-    line-height: 100%;
-    color: #fff;    
-    position: absolute; 
-    top:-30px;
-    left:0;
-}
-.pr-title{
-    .asap;
-    font-size: 33px;
-}
-.pr-subtitle{
-    .asap;
-    opacity: 0.5;
-    font-size: 16px;
-    text-transform: uppercase;
-}
-.pr-desc{
-    .mon;
-    font-size: 14px;    
-}
-.promos-result-item-more{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    .asap;
-    line-height: @animation-height;
-    font-size: 15px;
-    text-transform: uppercase;    
-    background: #a9adb1;
-    text-align: center;
-    color: #fff;
+.promos-result-list {
+	padding: 30px 0 40px 0;
 }
 
+.promos-result-content {
+	max-width: 1120px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 
-.promos-result-action{
-    .home-viajes-unicos-action;
+	.promos-result-item {
+		align-self: flex-start;
+		max-width: 350px;
+		overflow: hidden;
+		.item-shadow;
+		margin-bottom: 30px;
+		position: relative;
+		.promos-result-item-more {
+			.animate-basic;
+			-webkit-transform: translate(0, @animation-height);
+			-moz-transform: translate(0, @animation-height);
+			-o-transform: translate(0, @animation-height);
+			-ms-transform: translate(0, @animation-height);
+			transform: translate(0, @animation-height);
+		}
+		&:hover,
+		&.active {
+			.promos-result-item-more {
+				-webkit-transform: translate(0, 0);
+				-moz-transform: translate(0, 0);
+				-o-transform: translate(0, 0);
+				-ms-transform: translate(0, 0);
+				transform: translate(0, 0);
+			}
+			img {
+				transform: scale(1.1);
+			}
+		}
+		&:hover,
+		&.active {
+			.promos-result-item-description {
+				-webkit-transform: translate(0, -@animation-height);
+				-moz-transform: translate(0, -@animation-height);
+				-o-transform: translate(0, -@animation-height);
+				-ms-transform: translate(0, -@animation-height);
+				transform: translate(0, -@animation-height);
+			}
+		}
+	}
+}
+.promos-result-item-description {
+	margin-top: -5px;
+	padding: 30px 25px;
+	position: relative;
+	background: #fff;
+	.animate-basic;
+	.pr-subtitle {
+		margin-bottom: 10px;
+	}
+}
+.pr-price {
+	margin-left: 25px;
+	display: inline-block;
+	background: #c01e1a;
+	padding: 5px 15px;
+	.asap;
+	font-size: 25px;
+	line-height: 100%;
+	color: #fff;
+	position: absolute;
+	top: -30px;
+	left: 0;
+}
+.pr-title {
+	.asap;
+	font-size: 33px;
+}
+.pr-subtitle {
+	.asap;
+	opacity: 0.5;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+.pr-desc {
+	.mon;
+	font-size: 14px;
+}
+.promos-result-item-more {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	.asap;
+	line-height: @animation-height;
+	font-size: 15px;
+	text-transform: uppercase;
+	background: #a9adb1;
+	text-align: center;
+	color: #fff;
+}
+
+.promos-result-action {
+	.home-viajes-unicos-action;
 }
