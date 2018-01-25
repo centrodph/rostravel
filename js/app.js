@@ -53,7 +53,9 @@ const promosSearch = $('.promos-search');
 const promoItem = $('.promo-item-top-sticky');
 const sticked = false;
 
-$(document).ready(function() {});
+$(document).ready(function() {
+	$('.dd-list').mCustomScrollbar();
+});
 
 $(window).scroll(function(event) {
 	var scroll = $(window).scrollTop();
