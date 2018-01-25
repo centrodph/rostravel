@@ -49,24 +49,30 @@ body {
 }
 .slider-button a {
 	.btn-border-maker(#fff);
+	.asap;
 }
 
 //DONDE viajar
 .home-donde-viajar {
+	display: flex;
+	justify-content: center;
+	background: url(../images/promos-bg-top.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.donde-viajar {
 	position: relative;
 	z-index: 9;
 	top: -40px;
-	display: flex;
-	justify-content: center;
-}
-.donde-viajar {
 	flex: 1;
-	min-height: 300px;
-	max-width: 970px;
+	min-height: 200px;
+	max-width: 980px;
 	background: #fff;
 	padding: 20px;
 	text-align: center;
-	.basic-shadow;
+	-webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
 	.donde-viajar-title {
 		color: @gris;
 		font-size: 30px;
@@ -108,6 +114,9 @@ body {
 			border: solid 2px #fff;
 			opacity: 1;
 			background: #fff;
+			width: 13px;
+			height: 13px;
+			margin: 15px 3px;
 		}
 		.owl-dot.active span,
 		.owl-dot:hover span {
@@ -129,19 +138,22 @@ body {
 	.destacados-boxes-small {
 		width: 35%;
 		float: left;
+		padding-right: 12px;
 		.destacado-box-image {
 			position: relative;
+			margin-bottom: 5px;
 			.overlay {
 				display: flex;
 				position: absolute;
 				top: 0;
 				left: 0;
 				width: 100%;
-				height: 100%;
+				height: 98%;
 				flex-direction: column;
 				justify-content: center;
 				align-items: center;
 				color: #fff;
+				background: none;
 				.ov-title {
 					.manustrial;
 					font-size: 38px;
@@ -150,6 +162,13 @@ body {
 				.ov-subtitle {
 					.asap;
 					font-size: 19px;
+					opacity: 0;
+				}
+				&:hover {
+					background: rgba(0, 0, 0, 0.2);
+					.ov-subtitle {
+						opacity: 1;
+					}
 				}
 			}
 		}
@@ -181,6 +200,7 @@ body {
 		a {
 			padding-top: 1px;
 			padding-bottom: 1px;
+			.asap;
 		}
 	}
 }
@@ -202,6 +222,7 @@ body {
 		font-size: 32px;
 		color: @verdeazul;
 		.asap-med;
+		margin: 0;
 	}
 	.promo {
 		font-size: 43px;
@@ -217,10 +238,13 @@ body {
 	padding: 20px 0;
 	a {
 		.btn-border-maker(@verdeazul);
+		.asap;
 	}
 }
 
 .viajes-unicos-slide-item {
+	height: 460px;
+	width: 400px;
 	.box-slide-big-item;
 	.overlay {
 		padding: 30px 40px;
@@ -288,4 +312,9 @@ body {
 	.promos-search {
 		background: @naranja;
 	}
+}
+
+.promos-search-form-sticky {
+}
+.promos-search-form {
 }
