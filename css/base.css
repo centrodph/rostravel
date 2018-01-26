@@ -97,7 +97,7 @@ button {
 .header a.navbar-item.is-active {
   color: #b4b4b4;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .header .logo {
     padding: 10px;
     display: -webkit-box;
