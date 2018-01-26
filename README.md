@@ -14,13 +14,28 @@ https://centrodph.github.io/rostravel/contacto.html
 
 #Libs
 
+GoogleMap Editor
+
+https://mapkit.io/editor
+
+Gulp Include Files w/vars
+
 https://www.npmjs.com/package/gulp-file-include
+
+
+BulmaCSS
 
 https://bulma.io/documentation
 
 https://fontawesome.com/icons
 
+
+Create images
+
 https://dummyimage.com/
+
+
+Carousel jquery
 
 https://owlcarousel2.github.io/OwlCarousel2/docs/started-welcome.html
 
