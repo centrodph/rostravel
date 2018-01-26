@@ -51,7 +51,8 @@ $('.gp-item a').click(() => {
 const header = $('.header');
 const promosSearch = $('.promos-search');
 const promoItem = $('.promo-item-top-sticky');
-const sticked = false;
+let sticked = false;
+let sticked2 = false;
 
 $(document).ready(function() {
 	$('.dd-list').mCustomScrollbar();
@@ -60,16 +61,24 @@ $(document).ready(function() {
 $(window).scroll(function(event) {
 	var scroll = $(window).scrollTop();
 	if (scroll > 400 && !sticked) {
+		sticked=true;
 		header.sticky({ topSpacing: 0 });
 		promosSearch.sticky({ topSpacing: header.height() });
 		promoItem.sticky({ topSpacing: header.height() });
 	}
 	if (scroll < 400 && sticked) {
+		sticked=false
 		header.unstick();
 		promosSearch.unstick();
-		promosSearch.on('sticky-end', function() {
-			console.log('SSDDSDSSDSDSDDS');
-			console.log(promoItem.parent().height(0));
-		});
+		promoItem.unstick();
 	}
+
+	// if (scroll > 600 && !sticked2) {
+	// 	sticked2=true;
+	// 	promoItem.sticky({ topSpacing: header.height() });
+	// }
+	// if (scroll < 600 && sticked2) {
+	// 	sticked2=false
+	// 	promoItem.unstick();
+	// }
 });
