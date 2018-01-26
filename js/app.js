@@ -27,7 +27,18 @@ $('.owl-carousel-viajes-unicos').owlCarousel({
 	dots: false,
 	nav: false,
 	margin: 10,
-	responsiveClass: true
+	responsiveClass: true,
+	responsive: {
+		// breakpoint from 0 up
+		0: {
+			stagePadding: 50,
+			items: 1
+		},
+		// breakpoint from 768 up
+		768: {
+			items: 2
+		}
+	}
 });
 
 $('.owl-carousel-gallery').owlCarousel({
@@ -61,13 +72,13 @@ $(document).ready(function() {
 $(window).scroll(function(event) {
 	var scroll = $(window).scrollTop();
 	if (scroll > 400 && !sticked) {
-		sticked=true;
+		sticked = true;
 		header.sticky({ topSpacing: 0 });
 		promosSearch.sticky({ topSpacing: header.height() });
 		promoItem.sticky({ topSpacing: header.height() });
 	}
 	if (scroll < 400 && sticked) {
-		sticked=false
+		sticked = false;
 		header.unstick();
 		promosSearch.unstick();
 		promoItem.unstick();
@@ -81,4 +92,25 @@ $(window).scroll(function(event) {
 	// 	sticked2=false
 	// 	promoItem.unstick();
 	// }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+	// Get all "navbar-burger" elements
+	var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+	// Check if there are any navbar burgers
+	if ($navbarBurgers.length > 0) {
+		// Add a click event on each of them
+		$navbarBurgers.forEach(function($el) {
+			$el.addEventListener('click', function() {
+				// Get the target from the "data-target" attribute
+				var target = $el.dataset.target;
+				var $target = document.getElementById(target);
+
+				// Toggle the class on both the "navbar-burger" and the "navbar-menu"
+				$el.classList.toggle('is-active');
+				$target.classList.toggle('is-active');
+			});
+		});
+	}
 });

@@ -97,6 +97,32 @@ button {
 .header a.navbar-item.is-active {
   color: #b4b4b4;
 }
+@media (max-width: 768px) {
+  .header .logo {
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .header .logo span {
+    color: #fff;
+  }
+  .header .navbar-menu {
+    background: none;
+  }
+  .header .navbar {
+    background: none;
+  }
+}
 .iw-photo {
   background-size: cover;
   height: 150px;
@@ -454,14 +480,28 @@ input {
   width: 65%;
   float: left;
 }
+@media (max-width: 768px) {
+  .destacados-boxes .destacados-boxes-big {
+    width: 100%;
+    float: none;
+  }
+}
 .destacados-boxes .destacados-boxes-small {
   width: 35%;
   float: left;
   padding-right: 12px;
 }
+@media (max-width: 768px) {
+  .destacados-boxes .destacados-boxes-small {
+    width: 100%;
+    padding: 5px;
+  }
+}
 .destacados-boxes .destacados-boxes-small .destacado-box-image {
   position: relative;
   margin-bottom: 5px;
+  max-width: 380px;
+  margin: 0 auto;
 }
 .destacados-boxes .destacados-boxes-small .destacado-box-image .overlay {
   display: -webkit-box;
@@ -613,6 +653,12 @@ input {
   background-position: center;
   background-size: cover;
 }
+@media (max-width: 500px) {
+  .viajes-unicos-slide-item {
+    width: 300px;
+    height: 340px;
+  }
+}
 .viajes-unicos-slide-item .overlay {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -730,6 +776,11 @@ input {
   max-width: 920px;
   margin: 0 auto;
 }
+@media (max-width: 768px) {
+  .suscription-form {
+    padding: 0 20px;
+  }
+}
 .suscription-form form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -797,6 +848,11 @@ input {
   color: #fff;
   padding: 30px 0;
 }
+@media (max-width: 768px) {
+  .footer-bottom {
+    padding: 30px 10px;
+  }
+}
 .footer-bottom-content {
   margin: 0 auto;
   display: -webkit-box;
@@ -831,11 +887,27 @@ input {
       -ms-flex: 2;
           flex: 2;
 }
+@media (max-width: 768px) {
+  .footer-bottom-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-bottom-content div {
+    padding: 20px;
+  }
+}
 .promos-top {
   background: url(../images/promos-bg-top.png);
   background-repeat: no-repeat;
   background-position: center top;
   padding-top: 75px;
+}
+@media (max-width: 768px) {
+  .promos-top {
+    padding: 10px 0;
+  }
 }
 .promos-bg-viajes-unicos {
   background: url('../images/home-header-promociones.png') no-repeat;
@@ -870,12 +942,22 @@ input {
   font-style: normal;
   font-weight: 700;
 }
+@media (max-width: 768px) {
+  .promos-bg-viajes-unicos {
+    padding: 40px 0;
+  }
+}
 .promos-bg-viajes-unicos .promos-top-title {
   font-family: 'Asap Condensed';
   font-style: normal;
   font-weight: 700;
   font-size: 43px;
   color: #455a64;
+}
+@media (max-width: 768px) {
+  .promos-bg-viajes-unicos .promos-top-title {
+    font-size: 33px;
+  }
 }
 .promos-bg-viajes-unicos .promos-top-nav {
   font-family: 'Asap Condensed';
@@ -899,6 +981,11 @@ input {
   margin: 0 auto;
   max-width: 740px;
   padding: 20px 0;
+}
+@media (max-width: 768px) {
+  .promos-search-content {
+    padding: 0 20px;
+  }
 }
 .promos-search-content form {
   display: -webkit-box;
@@ -960,6 +1047,17 @@ input {
   box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.37);
   margin-bottom: 30px;
   position: relative;
+}
+@media (max-width: 768px) {
+  .promos-result-content .promos-result-item {
+    max-width: 49%;
+  }
+}
+@media (max-width: 500px) {
+  .promos-result-content .promos-result-item {
+    max-width: 350px;
+    margin: 0 auto 10px auto;
+  }
 }
 .promos-result-content .promos-result-item img {
   -webkit-transition: 0.4s ease-in-out;
@@ -1096,6 +1194,11 @@ input {
   background-position: center top;
   padding-top: 75px;
 }
+@media (max-width: 768px) {
+  .promo-item-center-bg {
+    padding: 10px 0;
+  }
+}
 .promo-item-center-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1105,6 +1208,14 @@ input {
       -ms-flex-direction: row;
           flex-direction: row;
 }
+@media (max-width: 768px) {
+  .promo-item-center-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .promo-item-center-content .social-box,
 .promo-item-center-content .galery-photos,
 .promo-item-center-content .documentos-dowload {
@@ -1113,9 +1224,21 @@ input {
 .promo-item-center-content .promo-item-sidebar {
   width: 30%;
 }
+@media (max-width: 768px) {
+  .promo-item-center-content .promo-item-sidebar {
+    width: auto;
+    padding: 0 10%;
+  }
+}
 .promo-item-center-content .promo-item-information {
   width: 70%;
   padding-right: 10%;
+}
+@media (max-width: 768px) {
+  .promo-item-center-content .promo-item-information {
+    width: auto;
+    padding: 0 10%;
+  }
 }
 .btn-print {
   float: right;
@@ -1218,15 +1341,21 @@ input {
   display: none;
   height: 0;
 }
-.is-sticky .promo-item-top-sticky {
+@media (max-width: 768px) {
+  .promo-item-top-sticky {
+    display: block;
+    height: auto;
+  }
+}
+.promo-item-top-sticky {
   display: block;
   height: auto;
   background: #f68014;
 }
-.is-sticky .promo-item-top-sticky .container {
+.promo-item-top-sticky .container {
   height: auto;
 }
-.is-sticky .box-reservar {
+.box-reservar {
   left: 0;
   width: 100% !important;
   -webkit-box-orient: horizontal;
@@ -1237,7 +1366,13 @@ input {
   display: -ms-flexbox;
   display: flex;
 }
-.is-sticky .box-reservar .box-reservar-top {
+@media (max-width: 768px) {
+  .box-reservar {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+.box-reservar .box-reservar-top {
   background: none;
   padding: 0;
   width: 70%;
@@ -1252,18 +1387,28 @@ input {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.is-sticky .box-reservar .br-title {
+@media (max-width: 768px) {
+  .box-reservar .box-reservar-top {
+    width: auto;
+  }
+}
+.box-reservar .br-title {
   color: #fff;
   font-size: 26px;
   font-family: 'Asap Condensed';
   font-style: normal;
   font-weight: 500;
 }
-.is-sticky .box-reservar .br-description {
+@media (max-width: 768px) {
+  .box-reservar .br-title {
+    font-size: 20px;
+  }
+}
+.box-reservar .br-description {
   font-size: 16px;
   color: #fff;
 }
-.is-sticky .box-reservar .content-wrap {
+.box-reservar .content-wrap {
   width: 30%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -1278,7 +1423,12 @@ input {
       -ms-flex-align: center;
           align-items: center;
 }
-.is-sticky .box-reservar .content-wrap .box-reservar-price {
+@media (max-width: 768px) {
+  .box-reservar .content-wrap {
+    width: auto;
+  }
+}
+.box-reservar .content-wrap .box-reservar-price {
   background: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1289,10 +1439,15 @@ input {
           flex-direction: column;
   padding-top: 0;
 }
-.is-sticky .box-reservar .content-wrap .box-reservar-price .br-price {
+.box-reservar .content-wrap .box-reservar-price .br-price {
   font-size: 30px;
 }
-.is-sticky .box-reservar .content-wrap .box-reservar-price .br-price-note {
+@media (max-width: 768px) {
+  .box-reservar .content-wrap .box-reservar-price .br-price {
+    font-size: 20px;
+  }
+}
+.box-reservar .content-wrap .box-reservar-price .br-price-note {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1302,13 +1457,13 @@ input {
           flex-direction: row;
   font-size: 10px;
 }
-.is-sticky .box-reservar .content-wrap .box-reservar-price .br-price-note br {
+.box-reservar .content-wrap .box-reservar-price .br-price-note br {
   display: none;
 }
-.is-sticky .box-reservar .content-wrap .box-reservar-action {
+.box-reservar .content-wrap .box-reservar-action {
   padding: 5px 0;
 }
-.is-sticky .box-reservar .content-wrap .box-reservar-action a {
+.box-reservar .content-wrap .box-reservar-action a {
   font-family: 'Asap Condensed';
   font-style: normal;
   font-weight: 500;
@@ -1320,24 +1475,29 @@ input {
   -moz-transition: 0.4s ease-in-out;
   -o-transition: 0.4s ease-in-out;
 }
-.is-sticky .box-reservar .content-wrap .box-reservar-action a {
+.box-reservar .content-wrap .box-reservar-action a {
   background: #fff;
   color: #f68014;
 }
-.is-sticky .box-reservar .content-wrap .box-reservar-action a:hover {
+.box-reservar .content-wrap .box-reservar-action a:hover {
   background: #e4730b;
   color: #fff;
 }
-.is-sticky .box-reservar .content-wrap .box-reservar-action.action-inv a {
+.box-reservar .content-wrap .box-reservar-action.action-inv a {
   color: #fff;
   background: #f68014;
 }
-.is-sticky .box-reservar .content-wrap .box-reservar-action.action-inv a:hover {
+.box-reservar .content-wrap .box-reservar-action.action-inv a:hover {
   background: #e4730b;
   color: #fff;
 }
 .box-reservar {
   text-align: center;
+}
+@media (max-width: 768px) {
+  .promo-item-top .box-reservar {
+    display: none;
+  }
 }
 .box-reservar-top {
   background: rgba(255, 255, 255, 0.8);
@@ -1551,7 +1711,7 @@ input {
   position: relative;
 }
 .documentos-dowload .dd-list-item:hover {
-  background-color: #e8e8e8 ;
+  background-color: #e8e8e8;
   background-image: url(../images/icon-descarga.png);
 }
 .documentos-dowload .dd-list-item a {
@@ -1598,6 +1758,12 @@ input {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
+@media (max-width: 768px) {
+  .contacto-info-bg {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 .contacto-info-bg .contacto-info-sep {
   height: 132px;
   width: 1px;
@@ -1617,6 +1783,11 @@ input {
 .contacto-info-bg .contacto-info-box {
   position: relative;
   width: 33%;
+}
+@media (max-width: 768px) {
+  .contacto-info-bg .contacto-info-box {
+    width: 50%;
+  }
 }
 .contacto-info-bg .contacto-info-box.border:after {
   content: '';
@@ -1721,6 +1892,7 @@ input {
 }
 .is-sticky .promos-search {
   background: #f68014;
+  padding-bottom: 10px;
 }
 .is-sticky .promos-search-form input {
   border-bottom: solid 1px #fff;

@@ -2,6 +2,12 @@
 .box-reservar {
 	text-align: center;
 }
+
+@media (max-width: 768px) {
+	.promo-item-top .box-reservar {
+		display: none;
+	}
+}
 .box-reservar-top {
 	background: rgba(255, 255, 255, 0.8);
 	padding: 30px 10px;
@@ -160,13 +166,12 @@
 		position: relative;
 		background: url(../images/icon-descarga.png) no-repeat;
 		background-position: 8px center;
-		&:hover{
-			background-color: #e8e8e8 ;
+		&:hover {
+			background-color: #e8e8e8;
 			background-image: url(../images/icon-descarga.png);
-		
 		}
 		position: relative;
-		a{
+		a {
 			position: absolute;
 			top: 0;
 			left: 0;
@@ -175,18 +180,17 @@
 		}
 	}
 
-	.mCSB_inside>.mCSB_container{
+	.mCSB_inside > .mCSB_container {
 		margin-right: 8px;
 	}
-	.mCSB_draggerRail{
+	.mCSB_draggerRail {
 		width: 5px;
 	}
-	.mCSB_scrollTools .mCSB_draggerRail{
+	.mCSB_scrollTools .mCSB_draggerRail {
 		background-color: #d8dcde;
 	}
-	.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+	.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
 		background: #a7afb3;
 		width: 7px;
 	}
-	
 }

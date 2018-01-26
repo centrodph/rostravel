@@ -1,38 +1,47 @@
-.promos-top{
-    background: url(../images/promos-bg-top.png);
-    background-repeat: no-repeat;
-    background-position: center top;
-    padding-top: 75px;
+.promos-top {
+	background: url(../images/promos-bg-top.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	padding-top: 75px;
+	@media (max-width: 768px) {
+		padding: 10px 0;
+	}
 }
 
-.promos-bg-viajes-unicos{
-    .home-viajes-unicos-header;
-    padding-top: 120px;
-    .promos-top-title{
-        .asap-bold;
-        font-size: 43px;
-        color: @verdeazul;
-    }
-    .promos-top-nav{
-        .asap;
-        color: @verdeazul;
-        font-size: 24px;
-        a{
-            margin: 0 10px;
-            color: @verdeazul;
-            &:hover, &.active{
-                .asap-bold;
-            }
-        }
-    }
+.promos-bg-viajes-unicos {
+	.home-viajes-unicos-header;
+	padding-top: 120px;
+	@media (max-width: 768px) {
+		padding: 40px 0;
+	}
+	.promos-top-title {
+		.asap-bold;
+		font-size: 43px;
+		color: @verdeazul;
+		@media (max-width: 768px) {
+			font-size: 33px;
+		}
+	}
+	.promos-top-nav {
+		.asap;
+		color: @verdeazul;
+		font-size: 24px;
+		a {
+			margin: 0 10px;
+			color: @verdeazul;
+			&:hover,
+			&.active {
+				.asap-bold;
+			}
+		}
+	}
 }
 
-.promos-search-content{
-    .suscription-form;
-    max-width: 740px;
-    padding: 20px 0; 
-    button{
-        background: @btngris;
-    }
+.promos-search-content {
+	.suscription-form;
+	max-width: 740px;
+	padding: 20px 0;
+	button {
+		background: @btngris;
+	}
 }
-

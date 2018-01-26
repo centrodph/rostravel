@@ -7,8 +7,8 @@
 }
 
 #mapkit-8713 {
-	height:430px;
-	width:100%;
+	height: 430px;
+	width: 100%;
 }
 
 .contacto-info-bg {
@@ -20,6 +20,9 @@
 	text-align: center;
 	align-items: center;
 	justify-content: space-around;
+	@media (max-width: 768px) {
+		flex-wrap: wrap;
+	}
 	.contacto-info-sep {
 		height: 132px;
 		width: 1px;
@@ -39,6 +42,9 @@
 	.contacto-info-box {
 		position: relative;
 		width: 33%;
+		@media (max-width: 768px) {
+			width: 50%;
+		}
 		&.border {
 			&:after {
 				content: '';

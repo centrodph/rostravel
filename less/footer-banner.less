@@ -1,70 +1,74 @@
 @import 'font.less';
-.footer-banner{
-    background: url('../images/footer-banner-bg2.jpg') no-repeat;
-    background-size: cover;
-    text-align: center;
-    background-position: center bottom
+.footer-banner {
+	background: url('../images/footer-banner-bg2.jpg') no-repeat;
+	background-size: cover;
+	text-align: center;
+	background-position: center bottom;
 }
 
-.footer-banner-logo{
-    padding: 40px 0 70px;
-    display: none;
+.footer-banner-logo {
+	padding: 40px 0 70px;
+	display: none;
 }
 
-.footer-banner-suscription{
-    color: #fff;
-    .asap;
-    font-size: 24px;
-    padding: 25px 0;
-    .suscription-title{
-        padding-bottom: 25px;
-    }
+.footer-banner-suscription {
+	color: #fff;
+	.asap;
+	font-size: 24px;
+	padding: 25px 0;
+	.suscription-title {
+		padding-bottom: 25px;
+	}
 }
 
-.suscription-form{
-    max-width: 920px;
-    margin: 0 auto;
-    form{
-        display: flex;
-        flex-direction: row;
-    }
-    input,button{        
-        margin: 0;
-        border:none;
-        height: 53px;
-        font-size: 22px;
-        .asap;
-    }
-    input{
-        flex: 8;
-        padding: 0 10px;
-        font-style: initial;
-    }
-    button{
-        flex: 2;        
-        background: @naranja;        
-        color: #fff;
-        cursor: pointer;
-    }
+.suscription-form {
+	max-width: 920px;
+	margin: 0 auto;
+	@media (max-width: 768px) {
+		padding: 0 20px;
+	}
+	form {
+		display: flex;
+		flex-direction: row;
+	}
+	input,
+	button {
+		margin: 0;
+		border: none;
+		height: 53px;
+		font-size: 22px;
+		.asap;
+	}
+	input {
+		flex: 8;
+		padding: 0 10px;
+		font-style: initial;
+	}
+	button {
+		flex: 2;
+		background: @naranja;
+		color: #fff;
+		cursor: pointer;
+	}
 }
 
-.footer-banner-nav{
-    padding: 50px 0;
-    a{
-        text-transform: uppercase;
-        color: #fff;
-        .asap-med;
-        font-size: 20px;
-        padding: 18px;
-    }
-    display: none;
+.footer-banner-nav {
+	padding: 50px 0;
+	a {
+		text-transform: uppercase;
+		color: #fff;
+		.asap-med;
+		font-size: 20px;
+		padding: 18px;
+	}
+	display: none;
 }
 
-.footer-home{
-    .footer-banner-nav{
-        display: block;
-    }
-    .footer-banner-logo{
-        display: block;
-    }
+.footer-home {
+	.footer-banner-nav {
+		display: block;
+	}
+	.footer-banner-logo {
+		display: block;
+	}
 }
