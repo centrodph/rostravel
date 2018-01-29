@@ -1509,6 +1509,11 @@ input {
           justify-content: center;
   padding: 10px 50px;
 }
+@media (max-width: 1000px) {
+  .overlay-galery .owl-thumbs {
+    padding: 5px;
+  }
+}
 .overlay-galery .owl-thumbs .owl-thumb-item {
   margin: 0;
   padding: 0;
@@ -1517,23 +1522,34 @@ input {
   height: 115px;
   width: 115px;
 }
+@media (max-width: 1000px) {
+  .overlay-galery .owl-thumbs .owl-thumb-item {
+    width: 25%;
+    height: auto;
+  }
+}
 .overlay-galery .owl-thumbs .owl-thumb-item img {
   height: 100%;
   width: auto;
 }
-/**
-	IS STICKY
-**/
-.promo-item-top-sticky {
-  display: none;
-  height: 0;
-}
-@media (max-width: 768px) {
-  .promo-item-top-sticky {
-    display: block;
+@media (max-width: 1000px) {
+  .overlay-galery .owl-thumbs .owl-thumb-item img {
+    width: 100%;
     height: auto;
   }
 }
+/**
+	IS STICKY
+**/
+/*
+.promo-item-top-sticky {
+	display: none;
+	height: 0;
+	@media (max-width: 768px) {
+		display: block;
+		height: auto;
+	}
+}*/
 .promo-item-top-sticky {
   display: block;
   height: auto;
@@ -1542,147 +1558,175 @@ input {
 .promo-item-top-sticky .container {
   height: auto;
 }
-@media (min-width: 768px) {
-  .promo-item-top-sticky {
-    display: none;
+.promo-item-top-sticky {
+  display: none;
+}
+.is-sticky .promo-item-top-sticky {
+  display: block;
+  height: auto;
+}
+.is-sticky .promo-item-top-sticky .box-reservar {
+  left: 0;
+  width: 100% !important;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px;
+}
+@media (max-width: 768px) {
+  .is-sticky .promo-item-top-sticky .box-reservar {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+.is-sticky .promo-item-top-sticky .box-reservar .box-reservar-top {
+  background: none;
+  padding: 0;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media (max-width: 768px) {
+  .is-sticky .promo-item-top-sticky .box-reservar .box-reservar-top {
+    width: auto;
+  }
+}
+.is-sticky .promo-item-top-sticky .box-reservar .br-title {
+  color: #fff;
+  font-size: 26px;
+  font-family: 'Asap Condensed';
+  font-style: normal;
+  font-weight: 500;
+}
+@media (max-width: 768px) {
+  .is-sticky .promo-item-top-sticky .box-reservar .br-title {
+    font-size: 20px;
+  }
+}
+.is-sticky .promo-item-top-sticky .box-reservar .br-description {
+  font-size: 16px;
+  color: #fff;
+}
+.is-sticky .promo-item-top-sticky .box-reservar .content-wrap {
+  width: 30%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 1300px) {
+  .is-sticky .promo-item-top-sticky .box-reservar .content-wrap {
+    width: 35%;
+  }
+}
+@media (max-width: 1000px) {
+  .is-sticky .promo-item-top-sticky .box-reservar .content-wrap {
+    width: auto;
   }
 }
 @media (max-width: 768px) {
-  .box-reservar {
-    left: 0;
-    width: 100% !important;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .is-sticky .promo-item-top-sticky .box-reservar .content-wrap {
+    width: auto;
   }
-  .box-reservar .box-reservar-top {
-    background: none;
-    padding: 0;
-    width: 70%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+}
+.is-sticky .promo-item-top-sticky .box-reservar .content-wrap .box-reservar-price {
+  background: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 0;
+}
+.is-sticky .promo-item-top-sticky .box-reservar .content-wrap .box-reservar-price .br-price {
+  font-size: 30px;
+}
+@media (max-width: 1300px) {
+  .is-sticky .promo-item-top-sticky .box-reservar .content-wrap .box-reservar-price .br-price {
+    font-size: 22px;
   }
-  .box-reservar .br-title {
-    color: #fff;
-    font-size: 26px;
-    font-family: 'Asap Condensed';
-    font-style: normal;
-    font-weight: 500;
+}
+@media (max-width: 1000px) {
+  .is-sticky .promo-item-top-sticky .box-reservar .content-wrap .box-reservar-price .br-price {
+    font-size: 20px;
   }
-  .box-reservar .br-description {
+}
+@media (max-width: 768px) {
+  .is-sticky .promo-item-top-sticky .box-reservar .content-wrap .box-reservar-price .br-price {
     font-size: 16px;
-    color: #fff;
   }
-  .box-reservar .content-wrap {
-    width: 30%;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .box-reservar .content-wrap .box-reservar-price {
-    background: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding-top: 0;
-  }
-  .box-reservar .content-wrap .box-reservar-price .br-price {
-    font-size: 30px;
-  }
-  .box-reservar .content-wrap .box-reservar-price .br-price-note {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    font-size: 10px;
-  }
-  .box-reservar .content-wrap .box-reservar-price .br-price-note br {
+}
+.is-sticky .promo-item-top-sticky .box-reservar .content-wrap .box-reservar-price .br-price-note {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 10px;
+}
+.is-sticky .promo-item-top-sticky .box-reservar .content-wrap .box-reservar-price .br-price-note br {
+  display: none;
+}
+.is-sticky .promo-item-top-sticky .box-reservar .content-wrap .box-reservar-action {
+  padding: 5px 0;
+}
+.is-sticky .promo-item-top-sticky .box-reservar .content-wrap .box-reservar-action a {
+  font-family: 'Asap Condensed';
+  font-style: normal;
+  font-weight: 500;
+  display: block;
+  border: solid 1px #fff;
+  padding: 6px 10px;
+  font-size: 17px;
+  -webkit-transition: 0.4s ease-in-out;
+  -moz-transition: 0.4s ease-in-out;
+  -o-transition: 0.4s ease-in-out;
+}
+.is-sticky .promo-item-top-sticky .box-reservar .content-wrap .box-reservar-action a {
+  background: #fff;
+  color: #f68014;
+}
+.is-sticky .promo-item-top-sticky .box-reservar .content-wrap .box-reservar-action a:hover {
+  background: #e4730b;
+  color: #fff;
+}
+.is-sticky .promo-item-top-sticky .box-reservar .content-wrap .box-reservar-action.action-inv a {
+  color: #fff;
+  background: #f68014;
+}
+.is-sticky .promo-item-top-sticky .box-reservar .content-wrap .box-reservar-action.action-inv a:hover {
+  background: #e4730b;
+  color: #fff;
+}
+@media (max-width: 1000px) {
+  .is-sticky .promo-item-top-sticky .box-reservar .content-wrap .box-reservar-action.action-inv a {
     display: none;
-  }
-  .box-reservar .content-wrap .box-reservar-action {
-    padding: 5px 0;
-  }
-  .box-reservar .content-wrap .box-reservar-action a {
-    font-family: 'Asap Condensed';
-    font-style: normal;
-    font-weight: 500;
-    display: block;
-    border: solid 1px #fff;
-    padding: 6px 10px;
-    font-size: 17px;
-    -webkit-transition: 0.4s ease-in-out;
-    -moz-transition: 0.4s ease-in-out;
-    -o-transition: 0.4s ease-in-out;
-  }
-  .box-reservar .content-wrap .box-reservar-action a {
-    background: #fff;
-    color: #f68014;
-  }
-  .box-reservar .content-wrap .box-reservar-action a:hover {
-    background: #e4730b;
-    color: #fff;
-  }
-  .box-reservar .content-wrap .box-reservar-action.action-inv a {
-    color: #fff;
-    background: #f68014;
-  }
-  .box-reservar .content-wrap .box-reservar-action.action-inv a:hover {
-    background: #e4730b;
-    color: #fff;
-  }
-}
-@media (max-width: 768px) and (max-width: 768px) {
-  .box-reservar {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-}
-@media (max-width: 768px) and (max-width: 768px) {
-  .box-reservar .box-reservar-top {
-    width: auto;
-  }
-}
-@media (max-width: 768px) and (max-width: 768px) {
-  .box-reservar .br-title {
-    font-size: 20px;
-  }
-}
-@media (max-width: 768px) and (max-width: 768px) {
-  .box-reservar .content-wrap {
-    width: auto;
-  }
-}
-@media (max-width: 768px) and (max-width: 768px) {
-  .box-reservar .content-wrap .box-reservar-price .br-price {
-    font-size: 20px;
   }
 }
 .box-reservar {
