@@ -2152,6 +2152,7 @@ input {
 .is-sticky .promos-search-form input {
   border-bottom: solid 1px #fff;
   width: 100%;
+  outline: none;
 }
 .is-sticky .promos-search-form input,
 .is-sticky .promos-search-form button {
@@ -2180,6 +2181,7 @@ input {
 .promos-search-form-sticky input {
   border-bottom: solid 1px #fff;
   width: 100%;
+  outline: none;
 }
 .promos-search-form-sticky input,
 .promos-search-form-sticky button {

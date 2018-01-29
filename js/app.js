@@ -75,20 +75,32 @@ let sticked2 = false;
 
 $(document).ready(function() {
 	$('.dd-list').mCustomScrollbar();
+
+	$('a.showSearchOnstiky').click(event => {
+		event.preventDefault();
+		console.log('sd');
+		$('#sticky-wrapper-search').slideToggle('slow', function() {
+			// Animation complete.
+		});
+	});
 });
 
 $(window).scroll(function(event) {
 	var scroll = $(window).scrollTop();
+	if (scroll > 0) {
+		header.sticky({ topSpacing: 0 });
+	}
+
 	if (scroll > 400 && !sticked) {
 		sticked = true;
-		header.sticky({ topSpacing: 0 });
-		promosSearch.sticky({ topSpacing: header.height() });
+
+		//promosSearch.sticky({ topSpacing: header.height() });
 		promoItem.sticky({ topSpacing: header.height() });
 	}
 	if (scroll < 400 && sticked) {
 		sticked = false;
-		header.unstick();
-		promosSearch.unstick();
+
+		//promosSearch.unstick();
 		promoItem.unstick();
 	}
 
