@@ -1414,7 +1414,7 @@ input {
 @media (max-width: 768px) {
   .promo-item-center-content .promo-item-sidebar {
     width: auto;
-    padding: 0 10%;
+    padding: 10px 0;
   }
 }
 .promo-item-center-content .promo-item-information {
@@ -1439,6 +1439,12 @@ input {
 }
 .btn-print i {
   margin-right: 5px;
+}
+@media (max-width: 768px) {
+  .btn-print {
+    float: none;
+    top: 0px;
+  }
 }
 .header-promo-item {
   padding: 15px 0;
@@ -2018,6 +2024,12 @@ input {
   font-size: 19px;
   min-height: 50px;
 }
+@media (max-width: 768px) {
+  .contacto-info-bg .ci-desc {
+    font-size: 17px;
+    padding: 5px;
+  }
+}
 .contacto-info-bg .contacto-info-box {
   position: relative;
   width: 33%;
@@ -2035,6 +2047,11 @@ input {
   height: 100%;
   width: 1px;
   background: #e7e8ea;
+}
+@media (max-width: 768px) {
+  .contacto-info-bg .contacto-info-box.border:after {
+    background: none;
+  }
 }
 .contacto-center-bg {
   background: url(../images/promos-bg-top.png);
