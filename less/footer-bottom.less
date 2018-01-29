@@ -25,10 +25,24 @@
 	.footer-bottom-kodear {
 		flex: 2;
 	}
+	.content-footer {
+		flex: 3;
+		display: flex;
+		flex-direction: row;
+	}
 	@media (max-width: 768px) {
 		flex-direction: column;
-		div {
+
+		.footer-bottom-text {
 			padding: 20px;
+		}
+		.content-footer {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			div {
+				padding: 8px;
+			}
 		}
 	}
 }

@@ -335,6 +335,7 @@ p.iw-x-details {
 }
 body {
   background: #eceff1;
+  min-width: 320px;
 }
 input {
   font-family: 'Asap Condensed';
@@ -379,6 +380,13 @@ input {
   font-weight: 400;
   font-style: italic;
 }
+@media (max-width: 768px) {
+  .slider-text {
+    font-size: 28px;
+    line-height: 25px;
+    padding: 10px;
+  }
+}
 .slider-title {
   font-size: 60px;
   text-shadow: 1px 1px 10px #000000;
@@ -386,6 +394,11 @@ input {
   font-style: normal;
   font-weight: 700;
   text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  .slider-title {
+    font-size: 40px;
+  }
 }
 .slider-button a {
   border: solid 2px #fff;
@@ -395,6 +408,12 @@ input {
   font-family: 'Asap Condensed';
   font-style: normal;
   font-weight: 400;
+  -webkit-transition: 0.4s ease-in-out;
+  -moz-transition: 0.4s ease-in-out;
+  -o-transition: 0.4s ease-in-out;
+}
+.slider-button a:hover {
+  background: rgba(255, 255, 255, 0.1);
 }
 .home-donde-viajar {
   display: -webkit-box;
@@ -451,6 +470,11 @@ input {
 .owl-carousel-box-slider .owl-nav .owl-next {
   float: right;
 }
+@media (max-width: 768px) {
+  .owl-carousel-box-slider .owl-nav {
+    top: 25%;
+  }
+}
 .owl-carousel-box-slider .owl-dots {
   position: absolute;
   left: 0;
@@ -469,6 +493,12 @@ input {
 .owl-carousel-box-slider .owl-dots .owl-dot:hover span {
   background: none;
 }
+@media (max-width: 768px) {
+  .owl-carousel-box-slider .owl-dots {
+    bottom: 13px;
+    height: 20px;
+  }
+}
 .destacados-boxes {
   max-width: 1120px;
   margin: 0 auto;
@@ -484,6 +514,7 @@ input {
   .destacados-boxes .destacados-boxes-big {
     width: 100%;
     float: none;
+    margin-bottom: 10px;
   }
 }
 .destacados-boxes .destacados-boxes-small {
@@ -502,6 +533,11 @@ input {
   margin-bottom: 5px;
   max-width: 380px;
   margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .destacados-boxes .destacados-boxes-small .destacado-box-image {
+    margin-bottom: 10px;
+  }
 }
 .destacados-boxes .destacados-boxes-small .destacado-box-image .overlay {
   display: -webkit-box;
@@ -583,9 +619,22 @@ input {
   font-size: 37px;
   line-height: 40x;
 }
+@media (max-width: 768px) {
+  .box-slide-big-item .slider-text {
+    font-size: 25px;
+    line-height: 25px;
+    padding: 10px;
+  }
+}
 .box-slide-big-item .slider-title {
   font-size: 37px;
   line-height: 40x;
+}
+@media (max-width: 768px) {
+  .box-slide-big-item .slider-title {
+    font-size: 30px;
+    line-height: 25x;
+  }
 }
 .box-slide-big-item .slider-button a {
   padding-top: 1px;
@@ -593,6 +642,12 @@ input {
   font-family: 'Asap Condensed';
   font-style: normal;
   font-weight: 400;
+  -webkit-transition: 0.4s ease-in-out;
+  -moz-transition: 0.4s ease-in-out;
+  -o-transition: 0.4s ease-in-out;
+}
+.box-slide-big-item .slider-button a:hover {
+  background: rgba(255, 255, 255, 0.1);
 }
 .home-viajes-unicos {
   padding: 30px 0;
@@ -644,6 +699,15 @@ input {
   font-family: 'Asap Condensed';
   font-style: normal;
   font-weight: 400;
+  -webkit-transition: 0.4s ease-in-out;
+  -moz-transition: 0.4s ease-in-out;
+  -o-transition: 0.4s ease-in-out;
+}
+.home-viajes-unicos-action a:hover {
+  border: solid 2px #2f4652;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #2f4652;
 }
 .viajes-unicos-slide-item {
   height: 460px;
@@ -654,6 +718,13 @@ input {
   background-size: cover;
 }
 @media (max-width: 500px) {
+  .viajes-unicos-slide-item {
+    width: 280px;
+    height: 310px;
+    overflow: hidden;
+  }
+}
+@media (max-width: 768px) {
   .viajes-unicos-slide-item {
     width: 300px;
     height: 340px;
@@ -691,9 +762,22 @@ input {
   font-size: 37px;
   line-height: 40x;
 }
+@media (max-width: 768px) {
+  .viajes-unicos-slide-item .slider-text {
+    font-size: 25px;
+    line-height: 25px;
+    padding: 10px;
+  }
+}
 .viajes-unicos-slide-item .slider-title {
   font-size: 37px;
   line-height: 40x;
+}
+@media (max-width: 768px) {
+  .viajes-unicos-slide-item .slider-title {
+    font-size: 30px;
+    line-height: 25x;
+  }
 }
 .viajes-unicos-slide-item .slider-button a {
   padding-top: 1px;
@@ -701,6 +785,12 @@ input {
   font-family: 'Asap Condensed';
   font-style: normal;
   font-weight: 400;
+  -webkit-transition: 0.4s ease-in-out;
+  -moz-transition: 0.4s ease-in-out;
+  -o-transition: 0.4s ease-in-out;
+}
+.viajes-unicos-slide-item .slider-button a:hover {
+  background: rgba(255, 255, 255, 0.1);
 }
 .viajes-unicos-slide-item .overlay {
   padding: 30px 40px;
@@ -737,12 +827,24 @@ input {
   font-size: 40px;
   letter-spacing: 4px;
 }
+@media (max-width: 768px) {
+  .viajes-unicos-slide-item .slider-title {
+    font-size: 28px;
+    line-height: 28px;
+  }
+}
 .viajes-unicos-slide-item .slider-description {
   font-family: 'Asap Condensed';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   opacity: 0.5;
+}
+@media (max-width: 768px) {
+  .viajes-unicos-slide-item .slider-description {
+    font-size: 14px;
+    line-height: 16px;
+  }
 }
 .viajes-unicos-slide-item a {
   position: absolute;
@@ -799,6 +901,19 @@ input {
   font-family: 'Asap Condensed';
   font-style: normal;
   font-weight: 400;
+  -webkit-transition: 0.4s ease-in-out;
+  -moz-transition: 0.4s ease-in-out;
+  -o-transition: 0.4s ease-in-out;
+}
+.suscription-form input:hover,
+.suscription-form button:hover {
+  opacity: 0.8;
+}
+@media (max-width: 768px) {
+  .suscription-form input,
+  .suscription-form button {
+    font-size: 16px;
+  }
 }
 .suscription-form input {
   -webkit-box-flex: 8;
@@ -806,6 +921,13 @@ input {
           flex: 8;
   padding: 0 10px;
   font-style: initial;
+}
+@media (max-width: 768px) {
+  .suscription-form input {
+    -webkit-box-flex: 4;
+        -ms-flex: 4;
+            flex: 4;
+  }
 }
 .suscription-form button {
   -webkit-box-flex: 2;
@@ -827,12 +949,23 @@ input {
   font-weight: 500;
   font-size: 20px;
   padding: 18px;
+  -webkit-transition: 0.4s ease-in-out;
+  -moz-transition: 0.4s ease-in-out;
+  -o-transition: 0.4s ease-in-out;
+}
+.footer-banner-nav a:hover {
+  opacity: 0.5;
 }
 .footer-home .footer-banner-nav {
   display: block;
 }
 .footer-home .footer-banner-logo {
   display: block;
+}
+@media (max-width: 768px) {
+  .footer-home .footer-banner-logo {
+    padding: 20px;
+  }
 }
 .footer-contacto {
   background: #006999;
@@ -887,6 +1020,18 @@ input {
       -ms-flex: 2;
           flex: 2;
 }
+.footer-bottom-content .content-footer {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
 @media (max-width: 768px) {
   .footer-bottom-content {
     -webkit-box-orient: vertical;
@@ -894,8 +1039,21 @@ input {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .footer-bottom-content div {
+  .footer-bottom-content .footer-bottom-text {
     padding: 20px;
+  }
+  .footer-bottom-content .content-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-bottom-content .content-footer div {
+    padding: 8px;
   }
 }
 .promos-top {
@@ -980,7 +1138,7 @@ input {
   max-width: 920px;
   margin: 0 auto;
   max-width: 740px;
-  padding: 20px 0;
+  padding: 5px 0;
 }
 @media (max-width: 768px) {
   .promos-search-content {
@@ -1005,6 +1163,19 @@ input {
   font-family: 'Asap Condensed';
   font-style: normal;
   font-weight: 400;
+  -webkit-transition: 0.4s ease-in-out;
+  -moz-transition: 0.4s ease-in-out;
+  -o-transition: 0.4s ease-in-out;
+}
+.promos-search-content input:hover,
+.promos-search-content button:hover {
+  opacity: 0.8;
+}
+@media (max-width: 768px) {
+  .promos-search-content input,
+  .promos-search-content button {
+    font-size: 16px;
+  }
 }
 .promos-search-content input {
   -webkit-box-flex: 8;
@@ -1012,6 +1183,13 @@ input {
           flex: 8;
   padding: 0 10px;
   font-style: initial;
+}
+@media (max-width: 768px) {
+  .promos-search-content input {
+    -webkit-box-flex: 4;
+        -ms-flex: 4;
+            flex: 4;
+  }
 }
 .promos-search-content button {
   -webkit-box-flex: 2;
@@ -1168,6 +1346,15 @@ input {
   font-family: 'Asap Condensed';
   font-style: normal;
   font-weight: 400;
+  -webkit-transition: 0.4s ease-in-out;
+  -moz-transition: 0.4s ease-in-out;
+  -o-transition: 0.4s ease-in-out;
+}
+.promos-result-action a:hover {
+  border: solid 2px #2f4652;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #2f4652;
 }
 .promo-item-top .promo-item-top-bg {
   background-size: cover;

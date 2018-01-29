@@ -38,11 +38,21 @@
 		height: 53px;
 		font-size: 22px;
 		.asap;
+		.animate-basic;
+		&:hover {
+			opacity: 0.8;
+		}
+		@media (max-width: 768px) {
+			font-size: 16px;
+		}
 	}
 	input {
 		flex: 8;
 		padding: 0 10px;
 		font-style: initial;
+		@media (max-width: 768px) {
+			flex: 4;
+		}
 	}
 	button {
 		flex: 2;
@@ -60,6 +70,10 @@
 		.asap-med;
 		font-size: 20px;
 		padding: 18px;
+		.animate-basic;
+		&:hover {
+			opacity: 0.5;
+		}
 	}
 	display: none;
 }
@@ -70,5 +84,8 @@
 	}
 	.footer-banner-logo {
 		display: block;
+		@media (max-width: 768px) {
+			padding: 20px;
+		}
 	}
 }

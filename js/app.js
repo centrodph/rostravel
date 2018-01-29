@@ -20,23 +20,31 @@ $('.owl-carousel-box-slider').owlCarousel({
 	navText: ['<i class="fas fa-angle-left"></i>', '<i class="fas fa-angle-right"></i>']
 });
 $('.owl-carousel-viajes-unicos').owlCarousel({
-	stagePadding: 150,
+	stagePadding: 50,
 	loop: true,
-	items: 2,
+
 	thumbs: false,
 	dots: false,
 	nav: false,
-	margin: 10,
+	margin: 5,
 	responsiveClass: true,
 	responsive: {
 		// breakpoint from 0 up
 		0: {
+			stagePadding: 30,
+			items: 1
+		},
+		400: {
 			stagePadding: 50,
 			items: 1
 		},
 		// breakpoint from 768 up
 		768: {
 			items: 2
+		},
+		// breakpoint from 1024 up
+		1200: {
+			items: 3
 		}
 	}
 });

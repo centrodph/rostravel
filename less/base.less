@@ -6,6 +6,7 @@
 
 body {
 	background: #eceff1;
+	min-width: 320px;
 }
 input {
 	.asap;
@@ -44,16 +45,28 @@ input {
 	font-size: 30px;
 	.asap;
 	font-style: italic;
+	@media (max-width: 768px) {
+		font-size: 28px;
+		line-height: 25px;
+		padding: 10px;
+	}
 }
 .slider-title {
 	font-size: 60px;
 	text-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
 	.asap-bold;
 	text-transform: uppercase;
+	@media (max-width: 768px) {
+		font-size: 40px;
+	}
 }
 .slider-button a {
 	.btn-border-maker(#fff);
 	.asap;
+	.animate-basic;
+	&:hover {
+		background: rgba(255, 255, 255, 0.1);
+	}
 }
 
 //DONDE viajar
@@ -108,6 +121,9 @@ input {
 		.owl-next {
 			float: right;
 		}
+		@media (max-width: 768px) {
+			top: 25%;
+		}
 	}
 	.owl-dots {
 		position: absolute;
@@ -126,6 +142,10 @@ input {
 		.owl-dot:hover span {
 			background: none;
 		}
+		@media (max-width: 768px) {
+			bottom: 13px;
+			height: 20px;
+		}
 	}
 }
 .destacados-boxes {
@@ -140,6 +160,7 @@ input {
 		@media (max-width: 768px) {
 			width: 100%;
 			float: none;
+			margin-bottom: 10px;
 		}
 	}
 
@@ -156,6 +177,9 @@ input {
 			margin-bottom: 5px;
 			max-width: 380px;
 			margin: 0 auto;
+			@media (max-width: 768px) {
+				margin-bottom: 10px;
+			}
 			.overlay {
 				display: flex;
 				position: absolute;
@@ -205,16 +229,29 @@ input {
 		color: #c6c6c6;
 		font-size: 37px;
 		line-height: 40x;
+		@media (max-width: 768px) {
+			font-size: 25px;
+			line-height: 25px;
+			padding: 10px;
+		}
 	}
 	.slider-title {
 		font-size: 37px;
 		line-height: 40x;
+		@media (max-width: 768px) {
+			font-size: 30px;
+			line-height: 25x;
+		}
 	}
 	.slider-button {
 		a {
 			padding-top: 1px;
 			padding-bottom: 1px;
 			.asap;
+			.animate-basic;
+			&:hover {
+				background: rgba(255, 255, 255, 0.1);
+			}
 		}
 	}
 }
@@ -253,6 +290,10 @@ input {
 	a {
 		.btn-border-maker(@verdeazul);
 		.asap;
+		.animate-basic;
+		&:hover {
+			.btn-border-maker(#2f4652);
+		}
 	}
 }
 
@@ -260,6 +301,11 @@ input {
 	height: 460px;
 	width: 400px;
 	@media (max-width: 500px) {
+		width: 280px;
+		height: 310px;
+		overflow: hidden;
+	}
+	@media (max-width: 768px) {
 		width: 300px;
 		height: 340px;
 	}
@@ -287,11 +333,19 @@ input {
 		.asap;
 		font-size: 40px;
 		letter-spacing: 4px;
+		@media (max-width: 768px) {
+			font-size: 28px;
+			line-height: 28px;
+		}
 	}
 	.slider-description {
 		.asap;
 		font-size: 18px;
 		opacity: 0.5;
+		@media (max-width: 768px) {
+			font-size: 14px;
+			line-height: 16px;
+		}
 	}
 	a {
 		position: absolute;
